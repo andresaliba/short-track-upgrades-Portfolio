@@ -1,0 +1,29 @@
+.cc-image {
+  max-width: 150px;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.truro-image {
+  max-width: 150px;
+  height: auto;
+  vertical-align: bottom;
+}
+
+@media (min-width: 1000px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 999px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}

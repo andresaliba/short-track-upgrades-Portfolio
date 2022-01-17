@@ -1,0 +1,192 @@
+<div class="main" *ngIf="dataService.isLoggedIn && dataService.isLoaded">
+  <div class="main--header text-center">
+    <h1>Admin Settings</h1>
+    <hr />
+  </div>
+  <!-- End of main header -->
+  <div class="main-content my-test">
+    <!--Reset Payment and Attendance Div-->
+    <div class="attendance-payment-form">
+      <div class="row">
+        <div class="col-sm-6 text-center" [formGroup]="attendanceForm">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input formControlName="attendanceCheck" type="checkbox" id="attendanceCheck" />
+              </div>
+              <div class="d-inline-block pl-2">
+                Yes, I confirm I want to reset everyone's current attendance status
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              class="btn btn-block btn-success"
+              value="Reset Current Attendance Status"
+              [disabled]="!attendanceForm.valid"
+              (click)="onSubmitAttend()"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6 text-center" [formGroup]="paymentForm">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input formControlName="paymentCheck" type="checkbox" id="paymentCheck" />
+              </div>
+              <div class="d-inline-block pl-2">
+                Yes, I confirm I want to reset everyone's payments
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              class="btn btn-block btn-success"
+              value="Reset Payments"
+              [disabled]="!paymentForm.valid"
+              (click)="onSubmitPaid()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Reset Payment and Attendance -->
+    <!-- Reset Racer Passwords and Change PayPal Cost -->
+    <div class="resetPassword-changeCost-form">
+      <div class="row">
+        <div class="col-sm-6" [formGroup]="resetPassForm">
+          <div class="form-group">
+            <label>Account Username:</label>
+            <input
+              type="text"
+              formControlName="username"
+              class="form-control {{ invalidUser ? 'is-invalid' : '' }}"
+              required
+            />
+            <div class="invalid-feedback">
+              Account not found
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              class="btn btn-block btn-success"
+              value="Reset Password"
+              [disabled]="!resetPassForm.valid"
+              (click)="onSubmitReset()"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6" [formGroup]="paypalForm">
+          <label class="d-block">Enter New Admission Cost:</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input class="form-control" type="number" formControlName="paypalPrice" min="1" max="40" />
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              class="btn btn-block btn-success"
+              value="Change Admission Price"
+              [disabled]="!paypalForm.valid"
+              (click)="onSubmitPayPal()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Reset Racer Pass and PayPal Cost -->
+    <!--Reset Attended Count Div-->
+    <div class="attended-form">
+      <div class="row">
+        <div class="reset-attended col-sm-6" [formGroup]="attendedForm">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input formControlName="attendedCheck" type="checkbox" id="attendedCheck" />
+              </div>
+              <div class="d-inline-block pl-2">
+                Yes, I confirm I want to reset everyone's Attended Count
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              class="btn btn-block btn-success"
+              value="Reset Attended Count"
+              [disabled]="!attendedForm.valid"
+              (click)="onSubmitResetAttended()"
+            />
+          </div>
+        </div>
+        <div class="reset-points col-sm-6" [formGroup]="pointsForm">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input formControlName="resetPointsCheck" type="checkbox" id="resetPointsCheck" />
+              </div>
+              <div class="d-inline-block pl-2">
+                Yes, I confirm I want to reset everyone's Total Points
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              class="btn btn-block btn-success"
+              value="Reset Total Points"
+              [disabled]="!pointsForm.valid"
+              (click)="onSubmitResetPoints()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Reset Payment and Attendance -->
+    <!-- Results Admin Div-->
+    <div class="results-admin" [formGroup]="adminForm">
+      <div class="text-center my-5">
+        <h3>Add New Results Admin</h3>
+        <hr />
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" formControlName="username" class="form-control" required />
+        </div>
+        <div class="row">
+          <div class="col">
+            <label>Password</label>
+            <input type="password" formControlName="password" class="form-control" required />
+          </div>
+          <div class="col">
+            <label>Confirm password</label>
+            <input type="password" formControlName="confirmedPassword" class="form-control" required />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <button type="cancel" class="btn btn-block btn-danger">
+              Cancel
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <input
+              class="btn btn-block btn-success"
+              value="Submit"
+              [disabled]="!adminForm.valid"
+              (click)="onSubmitAdmin()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Results Admin -->
+  </div>
+  <!-- End of main content -->
+</div>
+<!--End of main-->

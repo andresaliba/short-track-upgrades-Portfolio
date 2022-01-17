@@ -1,0 +1,102 @@
+<div *ngIf="dataService.isLoggedIn && dataService.isLoaded">
+  <h1 class="text-center m-3">{{ admin ? 'Racer Index' : 'Your racers' }}</h1>
+
+  <div class="col" *ngIf="admin" [formGroup]="searchForm">
+    <h2>Search racers</h2>
+
+    <div class="form-group">
+      <label>Chose sort method: </label>
+      <select class="form-control" formControlName="searchMethod" (change)="changeForm()">
+        <option value="1">Plate Number</option>
+        <option value="2">Category</option>
+        <option value="3">Attendance</option>
+      </select>
+    </div>
+
+    <div class="form-group" *ngIf="searchMethod == 1">
+      <label>By Plate Number: </label>
+      <input class="form-control" formControlName="plateNum" />
+    </div>
+
+    <div class="form-group" *ngIf="searchMethod == 2">
+      <label>By category: </label>
+      <select class="form-control" formControlName="category" (change)="categoryChange()">
+        <option value="1">Run-Bike</option>
+        <option value="2">Grade 1-Under</option>
+        <option value="3">Grade 2-3</option>
+        <option value="4">Grade 4-6</option>
+        <option value="5">Jr. High</option>
+        <option value="6">Adult</option>
+      </select>
+    </div>
+
+    <div *ngIf="searchMethod == 2">Check by attendence <input type="checkbox" formControlName="attendance" /></div>
+    <div *ngIf="searchMethod == 2">Sort by random <input type="checkbox" formControlName="random" /></div>
+
+    <div class="button-group" *ngIf="searchMethod == 1 || searchMethod == 2 || searchMethod == 3">
+      <input type="submit" class="btn btn-success" value="Search" (click)="onSubmit()" />
+      <button class="btn btn-primary" (click)="dataService.getRacers()">Reset</button>
+    </div>
+  </div>
+
+  <div class="col check-in">
+    <button class="btn btn-success" (click)="checkIn()">Check in</button>
+  </div>
+
+  <div *ngIf="dataService.isLoggedIn">
+    <table class="table table-striped table-responsive">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Select</th>
+          <th>Actions</th>
+          <th>Type</th>
+          <th>Plate Number</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Sex</th>
+          <th>Category</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Postal Code</th>
+          <th>Phone Number</th>
+          <th>Attended</th>
+          <th>Paid</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let racer of dataService.racers; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td><input type="checkbox" (click)="toggleCheckbox(racer.id)" /></td>
+          <td>
+            <div class="actions-row">
+              <i class="fas fa-pencil-alt" [routerLink]="['/admin/racers/edit']" [queryParams]="{ id: racer.id }"></i>
+              <i
+                *ngIf="admin"
+                class="fas fa-trash"
+                [routerLink]="['/admin/racers/delete']"
+                [queryParams]="{ id: racer.id }"
+              ></i>
+              <!-- <i *ngIf="!admin" class="fas fa-dollar-sign"></i> -->
+            </div>
+          </td>
+          <td>
+            <i class="fas fa-crown" *ngIf="racer.type == 'Parent'"></i>
+            <i class="fas fa-child" *ngIf="racer.type == 'Child'"></i>
+          </td>
+          <td>{{ racer.plateNum }}</td>
+          <td>{{ racer.firstName }}</td>
+          <td>{{ racer.lastName }}</td>
+          <td>{{ racer.sex }}</td>
+          <td>{{ racer.category }}</td>
+          <td>{{ racer.address }}</td>
+          <td>{{ racer.city }}</td>
+          <td>{{ racer.postalCode }}</td>
+          <td>{{ racer.phoneNum }}</td>
+          <td>{{ racer.attended + ' (' + racer.attendedCount + ' times)' }}</td>
+          <td>{{ racer.paid }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<div *ngIf="dataService.isLoaded">
+  <div class="row">
+    <div class="col text-nowrap">
+      <a href="#" [routerLink]="['/results']" class="back-link"
+        ><h4><i class="fas fa-arrow-left"></i> Back to results index</h4></a
+      >
+    </div>
+
+    <div class="col align-right text-nowrap" *ngIf="dataService.loggedInType == 'Admin'">
+      <a href="#" [routerLink]="['/admin/results/delete']" class="back-link" [queryParams]="{ id: id }"
+        ><h4 class="text-right">Admin: delete result</h4></a
+      >
+    </div>
+  </div>
+
+  <hr />
+
+  <h1 class="text-center">Race Results</h1>
+
+  <h3 class="text-center">Category: {{ category }}</h3>
+  <h3 class="text-center">Season: {{ season }}</h3>
+  <h3 class="text-center">Date: {{ date }}</h3>
+
+  <hr />
+
+  <div class="py-4 text-center">
+    <table class="table table-striped table-responsive result-table mx-auto">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Plate #</th>
+          <th>Laps</th>
+          <th>Male</th>
+          <th>Female</th>
+          <th>X</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let n of fakeArray; let count = index">
+        <ng-container *ngFor="let racer of racers; let i = index">
+          <ng-container *ngIf="racer.laps == fakeArray.length - count">
+            <tr *ngIf="racer.sex == 'Male'">
+              <td>{{ i + 1 }}</td>
+              <td>{{ racer.plateNum }}</td>
+              <td>{{ racer.laps }}</td>
+              <td>{{ racer.firstName }} {{ racer.lastName }}.</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr *ngIf="racer.sex == 'Female'">
+              <td>{{ i + 1 }}</td>
+              <td>{{ racer.plateNum }}</td>
+              <td>{{ racer.laps }}</td>
+              <td></td>
+              <td>{{ racer.firstName }} {{ racer.lastName }}.</td>
+              <td></td>
+            </tr>
+            <tr *ngIf="racer.sex == 'X'">
+              <td>{{ i + 1 }}</td>
+              <td>{{ racer.plateNum }}</td>
+              <td>{{ racer.laps }}</td>
+              <td></td>
+              <td></td>
+              <td>{{ racer.firstName }} {{ racer.lastName }}.</td>
+            </tr>
+          </ng-container>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div *ngIf="dataService.isLoggedIn && dataService.isLoaded">
+  <h1>Delete a racer</h1>
+
+  <div>
+    <div *ngIf="hasChildren">
+      Before you proceed - please note that this racer has children associated with the account. This means that upon deleting the parent racer, the children will be gone too. In addition to deleting {{ racer.firstName + ' ' + racer.lastName}}, you will also be deleting:
+
+      <ul *ngFor="let child of children">
+        <li>{{ child.firstName + ' ' + child.lastName }}</li>
+      </ul>
+
+      Are you sure you want to proceed with this action?
+    </div>
+
+
+    <div *ngIf="!hasChildren">
+      Are you sure you want to delete {{ racer.firstName + ' ' + racer.lastName }}?
+    </div>
+
+    <div>
+      <button class="btn btn-danger" (click)="onSubmit()" [disabled]="!canSubmit">Delete</button>
+      <button class="btn btn-success" (click)="cancel()">Cancel</button>
+    </div>
+
+  </div>
+</div>

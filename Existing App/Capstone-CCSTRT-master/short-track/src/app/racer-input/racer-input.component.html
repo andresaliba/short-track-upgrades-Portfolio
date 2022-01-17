@@ -1,0 +1,88 @@
+<div *ngIf="dataService.isLoggedIn && dataService.isLoaded">
+  <h1>Input race results</h1>
+
+  <!-- <div class="row">
+    <table class="table table-striped table-responsive">
+      <thead>
+        <tr>
+          <th>Placing #</th>
+          <th>Actions</th>
+          <th>Plate #</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let racer of racers; let i = index">
+        <tr>
+          <td>{{ i + 1 }}</td>
+          <td><i class="fas fa-user-minus" (click)="remove(i)"></i></td>
+          <td>{{ racer.plateNum }}</td>
+          <td>{{ racer.firstName + ' ' + racer.lastName }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+
+  <div class="row">
+    <!-- <div [formGroup]="racerForm" class="col">
+        <h2>Add racers</h2>
+        <div class="form-group">
+          <label>Plate number</label>
+          <input type="text" class="form-control" formControlName="plateNum" />
+        </div>
+        <input type="submit" (click)="add()" class="btn btn-success" value="Add racer" />
+
+    </div> -->
+
+    <div [formGroup]="racerForm" class="col" (keyup.enter)="addChild()">
+      <h2>Input plates</h2>
+      <div *ngIf="racerForm.get('plateNum').controls.length > 0">
+        <div
+          formArrayName="plateNum"
+          class="column"
+          *ngFor="let child of racerForm.get('plateNum').controls; let i = index"
+        >
+          <div [formGroupName]="i">
+            <div class="form-group">
+              <label>Plate number</label>
+              <input type="number" class="form-control" formControlName="plateNum" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mb-5">
+        <button (click)="addChild()" class="btn btn-success">Add Plate #</button>
+        <button (click)="removeChild()" class="btn btn-danger">Remove Plate #</button>
+      </div>
+    </div>
+
+    <div [formGroup]="resultsForm" class="col">
+      <h2>Submit results</h2>
+      <div class="col">
+        <div class="form-group">
+          <label>Season</label>
+          <select formControlName="season" class="form-control">
+            <option>Fall</option>
+            <option>Spring</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select formControlName="category" class="form-control" id="category">
+            <option>Run-Bike</option>
+            <option>Grade 1-Under</option>
+            <option>Grade 2-3</option>
+            <option>Grade 4-6</option>
+            <option>Jr. High</option>
+            <option>Adult</option>
+          </select>
+        </div>
+      </div>
+      <div class="text-danger pb-3 {{ !validForm ? 'd-block' : 'd-none' }}">
+        <h5>Error: The following Plate(s) are not valid: {{ invalidPlatesText }}</h5>
+      </div>
+      <button class="btn btn-success" [disabled]="!racerForm.valid" (click)="onSubmit()">
+        Submit results
+      </button>
+    </div>
+  </div>
+</div>

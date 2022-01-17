@@ -1,0 +1,21 @@
+.actions-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+
+    i{
+        &:hover{
+            opacity: 0.85;
+        }
+        cursor: pointer;
+    }
+}
+
+th, td{
+    text-align: center;
+}
+
+.check-in{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

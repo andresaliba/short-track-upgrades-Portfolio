@@ -1,0 +1,144 @@
+/* You can add global styles to this file, and also import other style files */
+@import './../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import './globals';
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+  // min-height: 80vh;
+}
+
+.banner-hero {
+  background-image: url(assets/img/Banner-test2.png);
+}
+
+/*
+* Push main container below the navbar to allow it to be fixed
+*/
+.main-container {
+  padding-top: 66px;
+  //! Can remove this maybe
+  // min-height: 86.5vh;
+  // background-color: #fff;
+}
+
+.navbar {
+  z-index: 998;
+}
+
+.location-map {
+  max-width: 400px;
+  height: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  min-height: 60px;
+  // line-height: 60px; /* Vertically center the text there */
+  background-color: #1a1a1a;
+  color: #fff;
+
+  a {
+    overflow: hidden;
+    text-decoration: none;
+    background-color: transparent;
+
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      color: $nav-color;
+    }
+  }
+}
+
+nav {
+  background-color: $nav-color;
+  color: #fff;
+  height: 72px;
+
+  a {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+code {
+  font-size: 80%;
+}
+
+.main {
+  margin-top: 10px;
+
+  &--header {
+    font-size: $base-font-size * 2;
+  }
+
+  &--content {
+    margin-top: 15px;
+  }
+}
+
+// Login CSS
+.login {
+  margin: 150px auto;
+}
+
+.login-active {
+  color: #fff;
+}
+
+/*
+* Login Media Query
+*/
+
+@media screen and (max-width: 768px) {
+  .login {
+    margin: 30px auto;
+  }
+
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+/*
+* Hero Info
+*/
+@media screen and (max-width: 991px) {
+  .hero-info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-info {
+    font-size: 0.85em;
+  }
+}
+
+.test {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+}
+
+.bg-navbar {
+  background-color: $nav-color;
+}
+
+// Payment Page
+.my-test {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

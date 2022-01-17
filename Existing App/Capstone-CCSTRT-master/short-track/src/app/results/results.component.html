@@ -1,0 +1,258 @@
+<div class="main" *ngIf="dataService.isLoaded">
+  <div class="main-content">
+    <div class="main--header text-center mb-5">
+      <h1>Spring Results</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Run-Bike</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Spring' && result.category == 'Run-Bike'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Grade 1-Under</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Spring' && result.category == 'Grade 1-Under'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Grade 2-3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Spring' && result.category == 'Grade 2-3'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Grade 4-6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Spring' && result.category == 'Grade 4-6'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Jr. High</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Spring' && result.category == 'Jr. High'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Adult</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Spring' && result.category == 'Adult'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="main--header text-center mb-5">
+      <h1>Fall Results</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Run-Bike</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Fall' && result.category == 'Run-Bike'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Grade 1-Under</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Fall' && result.category == 'Grade 1-Under'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Grade 2-3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Fall' && result.category == 'Grade 2-3'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Grade 4-6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Fall' && result.category == 'Grade 4-6'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Jr. High</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Fall' && result.category == 'Jr. High'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4">
+        <table class="table table-sm table-hover table-striped ml-4">
+          <thead>
+            <tr>
+              <th class="text-center">Adult</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let result of results">
+              <tr *ngIf="result.season == 'Fall' && result.category == 'Adult'">
+                <td class="text-center">
+                  <a href="#" [routerLink]="['/results/show/']" [queryParams]="{ id: result.id }">{{
+                    result.created_at
+                  }}</a>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

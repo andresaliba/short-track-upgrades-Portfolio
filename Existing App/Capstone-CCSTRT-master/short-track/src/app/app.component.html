@@ -1,0 +1,151 @@
+<!-- <div class="loadingOverlay" *ngIf="!dataService.isLoaded">
+  <div><i class="fa fa-spinner fa-spin"></i></div>
+</div> -->
+<!-- Fixed navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-navbar fixed-top" id="navbar" *ngIf="!dataService.disableCSS">
+  <div class="container bg-navbar">
+    <!-- <a class="navbar-brand" href="#">Colechester Short Track</a> -->
+    <a [routerLink]="['/home']" routerLinkActive="active"
+      ><img class="rounded" src="../assets/img/CSTLogo.png" alt="Test Logo"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-4">
+        <li class="nav-item">
+          <a [routerLink]="['/home']" routerLinkActive="active" class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/signup']" routerLinkActive="active" class="nav-link" href="#">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/results']" routerLinkActive="active" class="nav-link" href="#">Results</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto mr-4">
+        <li class="nav-link" *ngIf="dataService.loggedInType == 'Racer'">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Racer Admin
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" [routerLink]="['/admin/racers']" routerLinkActive="active">My racers</a>
+              <a
+                class="dropdown-item"
+                href="#"
+                [routerLink]="['/racer-admin/payment']"
+                routerLinkActive="active"
+                [queryParams]="{ id: dataService.racer.id }"
+                >Make Payment</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="nav-link" *ngIf="dataService.loggedInType == 'Admin'">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Admin
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" [routerLink]="['/admin/racers']" routerLinkActive="active"
+                >Racer Index</a
+              >
+              <a class="dropdown-item" href="#" [routerLink]="['/admin/racers-input']" routerLinkActive="active"
+                >Record Race Results</a
+              >
+              <a class="dropdown-item" href="#" [routerLink]="['/admin/ballots/attended']" routerLinkActive="active"
+                >Ballot Print Out Sheet</a
+              >
+              <a class="dropdown-item" href="#" [routerLink]="['/admin/total-points']" routerLinkActive="active"
+                >Total Points</a
+              >
+              <a class="dropdown-item" href="#" [routerLink]="['/admin/settings']" routerLinkActive="active"
+                >Settings</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="nav-link" *ngIf="dataService.loggedInType == 'Volunteer'">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Volunteer
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" [routerLink]="['/admin/racers-input']" routerLinkActive="active"
+                >Racer Input</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="nav-link">
+          <a
+            (click)="logout()"
+            [routerLink]="['/login']"
+            routerLinkActive="login-active"
+            class="nav-link px-0"
+            href="#"
+            >{{ dataService.isLoggedIn ? 'Log out' : 'Log in' }}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container main-container">
+  <div class="row mt-1" *ngIf="!dataService.disableCSS">
+    <div class="col banner-hero rounded-bottom text-white text-center">
+      <h1>Colchester Short Track</h1>
+      <p>Volunteer group in Truro, NS - promoting all ages cross country mountain biking.</p>
+      <p>
+        Colchester Short Track takes place on select Tuesday nights in Fall and Spring. At the Railyard bike park the
+        top of Victoria Park in Truro, NS. All ages. Run bikes, push bikes, mountain bikes, fat bikes, whatever.
+      </p>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer" id="footer" *ngIf="!dataService.disableCSS">
+  <div class="container text-center py-3">
+    <a class="footer-social" href="https://www.facebook.com/groups/1547250725504399/" target="_blank"
+      ><i class="fab fa-facebook-square"></i> Facebook</a
+    >
+    <br />
+    <span class="">&#169; Colechester Short Track 2019</span>
+  </div>
+</footer>

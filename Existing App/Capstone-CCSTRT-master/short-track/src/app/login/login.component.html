@@ -1,0 +1,33 @@
+<div class="main login">
+  <div class="main--header text-center">
+    <h3>Login</h3>
+  </div>
+  <div class="main__form" (keyup.enter)="dataService.login()">
+    <div class="main__form__group form-group">
+      <div class="input--label">Username</div>
+      <input [(ngModel)]="dataService.loginJSON.username" type="text" name="username" class="form-control" />
+    </div>
+    <div class="main__form__group form-group">
+      <div class="input--label">Password</div>
+      <input [(ngModel)]="dataService.loginJSON.password" type="password" name="password" class="form-control" />
+      <div class="text-danger text-center pt-2" *ngIf="!dataService.validLogin">
+        <small>Invalid Login - Please Try Again</small>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col">
+          <a [routerLink]="['/home']" class="btn btn-block btn-danger text-white" (click)="clearInputs()">Cancel</a>
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-block btn-success" (click)="dataService.login()">Login</button>
+        </div>
+      </div>
+      <div class="pt-3">
+        <small
+          >* If you have forgotten your username, password, please contact Darrin at darrin.belliveau@gmail.com</small
+        >
+      </div>
+    </div>
+  </div>
+</div>

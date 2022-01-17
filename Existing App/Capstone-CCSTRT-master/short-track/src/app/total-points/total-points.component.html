@@ -1,0 +1,538 @@
+<div class="main" *ngIf="dataService.isLoggedIn">
+  <div class="main-content">
+    <div class="main--header text-center my-3">
+      <h3>Run Bike Points</h3>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Male</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of runBikePoints">
+              <tr *ngIf="racer.sex == 'Male'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Female</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of runBikePoints">
+              <tr *ngIf="racer.sex == 'Female'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>X</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of runBikePoints">
+              <tr *ngIf="racer.sex == 'X'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <hr />
+    <div class="main--header text-center my-3">
+      <h3>Grade 1-Under Points</h3>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Male</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of oneUnderPoints">
+              <tr *ngIf="racer.sex == 'Male'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Female</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of oneUnderPoints">
+              <tr *ngIf="racer.sex == 'Female'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>X</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of oneUnderPoints">
+              <tr *ngIf="racer.sex == 'X'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <hr />
+    <div class="main--header text-center my-3">
+      <h3>Grade 2-3 Points</h3>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Male</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of twoThreePoints">
+              <tr *ngIf="racer.sex == 'Male'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Female</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of twoThreePoints">
+              <tr *ngIf="racer.sex == 'Female'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>X</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of twoThreePoints">
+              <tr *ngIf="racer.sex == 'X'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <hr />
+    <div class="main--header text-center my-3">
+      <h3>Grade 4-6 Points</h3>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Male</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of fourSixPoints">
+              <tr *ngIf="racer.sex == 'Male'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Female</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of fourSixPoints">
+              <tr *ngIf="racer.sex == 'Female'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>X</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of fourSixPoints">
+              <tr *ngIf="racer.sex == 'X'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <hr />
+    <div class="main--header text-center my-3">
+      <h3>Jr. High Points</h3>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Male</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of jrHighPoints">
+              <tr *ngIf="racer.sex == 'Male'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Female</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of jrHighPoints">
+              <tr *ngIf="racer.sex == 'Female'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>X</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of jrHighPoints">
+              <tr *ngIf="racer.sex == 'X'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <hr />
+    <div class="main--header text-center my-3">
+      <h3>Adult Points</h3>
+      <hr />
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Male</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of adultPoints">
+              <tr *ngIf="racer.sex == 'Male'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>Female</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of adultPoints">
+              <tr *ngIf="racer.sex == 'Female'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div class="sex-header text-center mb-3">
+          <h5>X</h5>
+        </div>
+        <table class="table table-sm table-hover table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Plate #</th>
+              <th class="text-center">Name</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let racer of adultPoints">
+              <tr *ngIf="racer.sex == 'X'">
+                <td class="text-center">
+                  {{ racer.plateNum }}
+                </td>
+                <td class="text-center">{{ racer.firstName }} {{ racer.lastName }}</td>
+                <td class="text-center">
+                  {{ racer.totalPoints }}
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <hr />
+  </div>
+</div>

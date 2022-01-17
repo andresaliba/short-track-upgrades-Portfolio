@@ -1,0 +1,10 @@
+<div *ngIf="dataService.isLoggedIn && dataService.isLoaded">
+  <h1>Deleting {{ id + ' - ' + date + ' - ' + season + ' - ' + category }}</h1>
+
+  <div>
+    Are you sure you want to delete these results?
+  </div>
+
+    <button class="btn btn-danger" (click)="delete()">Delete</button>
+    <button class="btn btn-success" (click)="dataService.redirectToResults()">Cancel</button>
+</div>

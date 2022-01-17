@@ -1,0 +1,104 @@
+<div class="main" *ngIf="dataService.isLoggedIn">
+  <div class="main--header text-center">
+    <h1>Editing {{ racer.firstName + ' ' + racer.lastName }}</h1>
+  </div>
+  <div [formGroup]="racerForm">
+    <div class="main--content">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input formControlName="firstName" class="form-control" type="text" id="firstName" required />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input formControlName="lastName" class="form-control" type="text" id="lastName" required />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input formControlName="address" class="form-control" type="text" id="address" required />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input formControlName="city" class="form-control" type="text" id="city" required />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="postalCode">Postal Code</label>
+            <input formControlName="postalCode" class="form-control" type="text" id="postalCode" required />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="phoneNum">Phone Number</label>
+            <input formControlName="phoneNum" class="form-control" type="text" id="phoneNum" required />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="Sex">Gender</label>
+            <select formControlName="sex" class="form-control" id="sex">
+              <option>Male</option>
+              <option>Female</option>
+              <option>X</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select formControlName="category" class="form-control" id="category">
+              <option>Run-Bike</option>
+              <option>Grade 1-Under</option>
+              <option>Grade 2-3</option>
+              <option>Grade 4-6</option>
+              <option>Jr. High</option>
+              <option>Adult</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="plateNumber">Plate Number</label>
+            <input formControlName="plateNum" class="form-control" type="text" id="plateNumber" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <button type="cancel" (click)="cancel()" class="btn btn-block btn-danger">
+              Cancel
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <input
+              [disabled]="!racerForm.valid"
+              type="submit"
+              (click)="onSubmit()"
+              class="btn btn-block btn-success"
+              value="Update"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Content-->
+</div>

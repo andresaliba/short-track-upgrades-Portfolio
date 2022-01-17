@@ -1,0 +1,46 @@
+
+
+$base-font-size: 14px;
+$device: "screen and (max-width:760px)";
+$nav-color: #5a9e44;
+
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex($args) {
+    -webkit-box-flex: $args;
+    -webkit-flex: $args;
+    -ms-flex: $args;
+    flex: $args; 
+}
+
+@mixin noselect(){
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.loadingOverlay {
+    position: fixed;
+    z-index: 999;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    overflow: show;
+    margin: auto;
+    background-color: $nav-color;
+    @include display-flex();
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 48px;
+}

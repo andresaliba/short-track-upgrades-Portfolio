@@ -1,0 +1,11 @@
+.racer-name {
+  padding: 15px;
+}
+
+.print-out {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+
+  border-style: dotted dotted dotted dotted;
+}

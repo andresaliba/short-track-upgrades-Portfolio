@@ -1,0 +1,19 @@
+<div class="main" *ngIf="dataService.isLoggedIn && dataService.isLoaded">
+  <div class="main--header text-center">
+    <h1>Racer Payment</h1>
+  </div>
+  <!-- End of main header -->
+  <div class="main-content my-test">
+    <div class="mx-auto py-5">
+      <div class="bg-light rounded px-3 py-2 mb-3 border">
+        You have {{ this.dataService.nonAdults }} individual(s) who require payment
+      </div>
+      <div class="bg-light rounded px-3 py-2 mb-3 border">The price is $15 per person</div>
+      <div class="bg-light rounded px-3 py-2 mb-3 border">Your total will be ${{ this.dataService.totalPrice }}</div>
+    </div>
+    <!-- Set up a container element for the button -->
+    <div id="paypal-button-container" class="mx-auto"></div>
+  </div>
+  <!-- End of main content -->
+</div>
+<!--End of main-->
