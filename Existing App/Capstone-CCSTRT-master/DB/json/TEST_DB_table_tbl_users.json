@@ -1,0 +1,1315 @@
+{
+  "type": "table",
+  "name": "tbl_users",
+  "database": "TEST_DB",
+  "data": [
+    {
+      "username": "Aaron.neaves@gmail.com",
+      "password": "$2b$10$wkBHgEBL8sPBpMHl0jWfPODBvnI7RoIE5L2A9mBPZTaPmQPo8qJky",
+      "type": "Racer",
+      "racerID": "237"
+    },
+    {
+      "username": "Ajferguson31@gmail.com",
+      "password": "$2b$10$dSF2p1.JsQLW7Lh5OONJmuyAag0nL.av1QkIE5H5Mz1t9TtJQebNa",
+      "type": "Racer",
+      "racerID": "180"
+    },
+    {
+      "username": "Alison.montena@gmail.com",
+      "password": "$2b$10$LBOw5kzsD.pAAdEU7JRnLOlS9IlkQuVrhxaPuoK7Pm.bMLrq4eEt.",
+      "type": "Racer",
+      "racerID": "256"
+    },
+    {
+      "username": "AmeliaB",
+      "password": "$2b$10$WLQINLGvBrPiDs9SuD3g7.a2ZbkvQJ9cxjWAhspl7RsH7ASlPkM5q",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "amillett@hotmail.com ",
+      "password": "$2b$10$fv6uoMsO16x8Ltr6mc.SqOFkUQbpbSsVjiz5M7ivjlIzZnLTCDuR6",
+      "type": "Racer",
+      "racerID": "235"
+    },
+    {
+      "username": "amyvano@dal.ca",
+      "password": "$2b$10$TgHoTDjw0jYN34ur1aNb2e1.0nnBL1SY2H8oH1pZgFO4RLknXoZie",
+      "type": "Racer",
+      "racerID": "123"
+    },
+    {
+      "username": "amy_topshee@hotmail.com",
+      "password": "$2b$10$z9dTX8sfAOs5a5b51Eh60u9PUNTY0zzomsnaRrLYJlGG7TNf9i3QK",
+      "type": "Racer",
+      "racerID": "191"
+    },
+    {
+      "username": "anayeligordon247@gmail.com",
+      "password": "$2b$10$V/U/PX6rVy0jU3Vcjb4jFOqaFLOmyRQHwe7Whb5IuzW3RKHcZWmX6",
+      "type": "Racer",
+      "racerID": "91"
+    },
+    {
+      "username": "andrewhboone@icloud.com",
+      "password": "$2b$10$JC0jaMOU6u9wOb5RZEwAn.v5sLWs/vQeUutZTIq3KXvNTX9qO0m.O",
+      "type": "Racer",
+      "racerID": "171"
+    },
+    {
+      "username": "anne@annejanelle.com",
+      "password": "$2b$10$ZbYht7VVRNSLI74.YQ.0WuyXtLX1wcVfXtfIcaSK3.9njC4X/NGai",
+      "type": "Racer",
+      "racerID": "164"
+    },
+    {
+      "username": "arrowsandrubies@gmail.com",
+      "password": "$2b$10$AZmyG492k/WAi9/oVa6bV.9vh1QL5YXRohBzpa0rUzDJyxgapXFDC",
+      "type": "Racer",
+      "racerID": "277"
+    },
+    {
+      "username": "asexton028@gmail.com",
+      "password": "$2b$10$Y37VlGhzzQolfHk33X6yqe54GQIxVsLYNgRI9yNesA2UP5LMjKLPW",
+      "type": "Racer",
+      "racerID": "75"
+    },
+    {
+      "username": "ashleighbonnell@gmail.com",
+      "password": "$2b$10$wnnvT2T3Dytxt6CnyMsMAOqjhq8rzXdCb7GvDSoyGr8NXvjT66ZZe",
+      "type": "Racer",
+      "racerID": "151"
+    },
+    {
+      "username": "ashleyahunt@hotmail.com",
+      "password": "$2b$10$Cbef9SGPWMSmD1.nGi0YyOfLYw/0OE5SsK5tpY4jgnBCpm5Etdti2",
+      "type": "Racer",
+      "racerID": "62"
+    },
+    {
+      "username": "ashleyessimms@hotmail.com",
+      "password": "$2b$10$AhWwutVlja9C90ZeoKAzTOMnAMSdG1.DlAGVfUTOGHXU5MZskzD3.",
+      "type": "Racer",
+      "racerID": "302"
+    },
+    {
+      "username": "Austin.mackenzie4@gmail.com",
+      "password": "$2b$10$W0cSPs32Ai6WGFh4jtWC9e5PGhMB..EtrsZ47rNFSk.AcNPpuBrCO",
+      "type": "Racer",
+      "racerID": "202"
+    },
+    {
+      "username": "bairdem86@gmail.com",
+      "password": "$2b$10$RHzNNBFvoZxaXyltc7qBF.mK/4JJaQQLAK/OYlx4SHac9FRj5nDc6",
+      "type": "Racer",
+      "racerID": "238"
+    },
+    {
+      "username": "beau.blois@gmail.com",
+      "password": "$2b$10$h3oLDuWqy/PmuQUPc7Q98u34aLH0H9XaU59RhloZ/mu40y8RRx5py",
+      "type": "Racer",
+      "racerID": "319"
+    },
+    {
+      "username": "Beaublois@gmsil.com",
+      "password": "$2b$10$sRX9fKl.53BseB83T0poEOWWMnQUTcS.LaquwxN9u0luPYx0jMjOW",
+      "type": "Racer",
+      "racerID": "153"
+    },
+    {
+      "username": "bertha.maclean@hotmail.com",
+      "password": "$2b$10$VKhD7shUWjWVZyXkboq3pubxzgkPqcCIQ1Q01WCNo6FJlHsJYeSBu",
+      "type": "Racer",
+      "racerID": "333"
+    },
+    {
+      "username": "Bikerdave2222@hotmail.com",
+      "password": "$2b$10$QjS0QVoyxWHH4yBaaYZxj.fdtdVWWAz2eRDDbmclj27rIzQktKhDa",
+      "type": "Racer",
+      "racerID": "41"
+    },
+    {
+      "username": "bmharbers@outlook.com",
+      "password": "$2b$10$R0.Kgqh.4BOnpDKlUePsDOwJ9AeD56nsEoWeyKkzEp6LD7XANk0fS",
+      "type": "Racer",
+      "racerID": "253"
+    },
+    {
+      "username": "boones@gnspes.ca",
+      "password": "$2b$10$2zetFiijrCGKgev3oT2FH.vE3Bq9ZmJZLyAGJjerfrLgQbLZJtXpu",
+      "type": "Racer",
+      "racerID": "176"
+    },
+    {
+      "username": "boupaul@hotmail.com",
+      "password": "$2b$10$edy0Q9dfXARJ4GLDnvLy/ehy2fONQLVeCyLdXPzCQ2fKP6QI6dkKe",
+      "type": "Racer",
+      "racerID": "71"
+    },
+    {
+      "username": "brennaconrad@yahoo.ca",
+      "password": "$2b$10$DZh4fbGmPkiKi.5awPKXXevcSumHzS4sG8aBUBXZTbbJ5h/4evJwq",
+      "type": "Racer",
+      "racerID": "197"
+    },
+    {
+      "username": "Bretteugene@hotmail.com",
+      "password": "$2b$10$x3/nyIJTtyiLwQ31pKsJsOfCJysVfYtRv4iNtYOx3HsggJ5C.KocW",
+      "type": "Racer",
+      "racerID": "136"
+    },
+    {
+      "username": "briannalaine@hotmail.com",
+      "password": "$2b$10$h84iUb5N5fRZEpd9r.Of9uawClFYwyPDT0CSPx7BDhINzN2VGfNQS",
+      "type": "Racer",
+      "racerID": "67"
+    },
+    {
+      "username": "Brittanie_macphee@hotmail.com",
+      "password": "$2b$10$kEhMo.CWo.AN4lDZ/A5Xt.yVOfgJYrn8iTOJ8NiH6qrktah/RaWw.",
+      "type": "Racer",
+      "racerID": "244"
+    },
+    {
+      "username": "Brittany-mackenzie@hotmail.com",
+      "password": "$2b$10$K.DHVxtgs37Cij5fty54oe5tloHilxKuYbYn3cpB3groThA..uB7a",
+      "type": "Racer",
+      "racerID": "70"
+    },
+    {
+      "username": "bromlynr@gmail.com",
+      "password": "$2b$10$N5242mWeF/dl6MXtjuzlRu6ZgR6Fo7xabjaK.1ZPP4nGST8B3BkgW",
+      "type": "Racer",
+      "racerID": "51"
+    },
+    {
+      "username": "brydonmacdonald1@gmail.com",
+      "password": "$2b$10$3geC6nuq8d.JNKHCIRN8E.IwAe84d..3PS.qUumkMPAFUZUu/Neru",
+      "type": "Racer",
+      "racerID": "42"
+    },
+    {
+      "username": "C.towell@hotmail.com",
+      "password": "$2b$10$AqBIJV0dCAeE3i92zXPuh.gKN0S8GDQlk4uEBX/s86NW9wtKxs2Qe",
+      "type": "Racer",
+      "racerID": "184"
+    },
+    {
+      "username": "campbelljl@gnspes.ca",
+      "password": "$2b$10$6e7GSdrP.pPY0CVZXm5aSuILHd5jOi47NT5V4276FE.kuz1nxaIEa",
+      "type": "Racer",
+      "racerID": "85"
+    },
+    {
+      "username": "carlalittle88@hotmail.com",
+      "password": "$2b$10$TnnmbJT8/DQclcPf/8wkuO1w94ulsvcBGmDWKSRqtpHRYVo019vU6",
+      "type": "Racer",
+      "racerID": "334"
+    },
+    {
+      "username": "carolyn.b.marshall@gmail.com",
+      "password": "$2b$10$vxFT2ogxptVLA6ntvAgiH.RwwqGYFqykr4t6UzITBM/kXxhtlFmrG",
+      "type": "Racer",
+      "racerID": "60"
+    },
+    {
+      "username": "Carolyn.Benvie@novascotia.ca",
+      "password": "$2b$10$GQFakUTrovJpDNS99iIbl.B1VDeIpkIiDe9LCZuxtJ8oMdIDOBRim",
+      "type": "Racer",
+      "racerID": "266"
+    },
+    {
+      "username": "Carolynrau33@gmail.com",
+      "password": "$2b$10$zPbEsWJUESt.i/PpkvRH6ubTdkeBo6UJeAOco6Rc73.Tvpd9IhQ26",
+      "type": "Racer",
+      "racerID": "183"
+    },
+    {
+      "username": "cdnjeepin@gmail.com",
+      "password": "$2b$10$rxJLNPXa0rtSv7/ZmZTiIuNAdFPnhzsi0UlIoCORrkShPM0ZDPsz.",
+      "type": "Racer",
+      "racerID": "40"
+    },
+    {
+      "username": "chicky_08@hotmail.com",
+      "password": "$2b$10$oWH.aoaHFIbPCzporJrAOulEj4ZeswUPXIMY7wViDElzFNDF6f44G",
+      "type": "Racer",
+      "racerID": "118"
+    },
+    {
+      "username": "chisholmslindsey396@gmail.com",
+      "password": "$2b$10$xqYtkMHVCHnKFh7XVcEvbe20YcjbOXOWzfjstmlT5KK7l980LxPJ.",
+      "type": "Racer",
+      "racerID": "245"
+    },
+    {
+      "username": "clarissa@millenfarms.com",
+      "password": "$2b$10$FrXOIzjCvla6nfy3gvAK/OzoFhLjjrWM5A/13aGvqrv8HoIuwfFaO",
+      "type": "Racer",
+      "racerID": "296"
+    },
+    {
+      "username": "Cmartin99@hotmail.com ",
+      "password": "$2b$10$xAPJfUM3bFvwsYUsnNPt6eAjgDvhr/hAyDjA8bbXEXbOYP/NjT9Ei",
+      "type": "Racer",
+      "racerID": "225"
+    },
+    {
+      "username": "colene.chisholm@gmail.com",
+      "password": "$2b$10$IjjiUmg3SBTU3anEMRA4WOy6RJtP0lG9tYnNw.U1gi/XPE4o/jelK",
+      "type": "Racer",
+      "racerID": "263"
+    },
+    {
+      "username": "Cookehaf@gmail.com",
+      "password": "$2b$10$Kc8jI76yzscf.QVlfOwRp.lgfNhcFGTMwMtqjnJjQsFxG/CoSfQAK",
+      "type": "Racer",
+      "racerID": "255"
+    },
+    {
+      "username": "cookeheidi@hotmail.com",
+      "password": "$2b$10$YqYbJy2c9UVoLfZy4qXI0ud9OMpjCOAiRR9dKmTRe4vXrcTYivAa.",
+      "type": "Racer",
+      "racerID": "94"
+    },
+    {
+      "username": "cory_mackinnon@hotmail.com",
+      "password": "$2b$10$60uxZ/pUQCtPj/wtXnedseOMNPaC8.atJUN2VtTv1rlnMjd826IA.",
+      "type": "Racer",
+      "racerID": "216"
+    },
+    {
+      "username": "Courtneymarie01@hotmail.com",
+      "password": "$2b$10$QbDGgClsCLX16oLBhTLvTOfXsJOACkU87VF4PxNsQBgXLEUF26EWa",
+      "type": "Racer",
+      "racerID": "262"
+    },
+    {
+      "username": "CST-2-3-2019",
+      "password": "$2b$10$N/MetK4visRTyaKRPy2ebeUA32/nymCh1gd/AJ2uc28.x759U/vNa",
+      "type": null,
+      "racerID": null
+    },
+    {
+      "username": "CST-4-6-2019",
+      "password": "$2b$10$HgANUfTm9YTyg4lqg8NN3e/wNxkyFP.ENMsj1d59x1OEm33Cifw8C",
+      "type": null,
+      "racerID": null
+    },
+    {
+      "username": "CST-Adult-2019",
+      "password": "$2b$10$nKQ9ZnaoJFOd0xMKNAwDluYDQ9ITLF7g1yp/vwTPL2LE2qBbIKASa",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "CST-JrHigh-2019",
+      "password": "$2b$10$dz16Ad/Wv0JG0uMvyX8CxuOuOAbtp3FVrNMCkm99ZijA72Vc/j.Vi",
+      "type": null,
+      "racerID": null
+    },
+    {
+      "username": "CST-Run-2019",
+      "password": "$2b$10$FpS3QxMR1VClsTKmPofIBO6bFmv5LJ27Y3DaYruZ3wYn7SZxlyspm",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "CST-U1-2019",
+      "password": "$2b$10$9kpqDASL5cHlvaJQIYjzl.DQkgZZo4rvKoQALpej224MvCaLa.a8G",
+      "type": null,
+      "racerID": null
+    },
+    {
+      "username": "csullivan457@gmail.com",
+      "password": "$2b$10$3aIY8K.vd/nm0x2E65oELuoE9Jv.oDQ6usrUgQjIl/2YgnxCZOOOm",
+      "type": "Racer",
+      "racerID": "49"
+    },
+    {
+      "username": "cyndimaclean91@gmail.com",
+      "password": "$2b$10$x76BdtHtbpAfIIA5dJh17uFL21EefBF2hY3YKuoFzKwfsATAMhW4G",
+      "type": "Racer",
+      "racerID": "196"
+    },
+    {
+      "username": "Dane__henderson@hotmail.com",
+      "password": "$2b$10$UwzWYSs8QyqIkFVsoH.kfOHGLs41SfewXbGmf7gO7za6zO6E/RcXG",
+      "type": "Racer",
+      "racerID": "240"
+    },
+    {
+      "username": "daniellepinkney@hotmail.com",
+      "password": "$2b$10$1CqeMSFq/EZk.JXEOPjNq.v5EXrvyze9BQvlLWMOxvmYtgm43zCIy",
+      "type": "Racer",
+      "racerID": "150"
+    },
+    {
+      "username": "dankharrington@gmail.com",
+      "password": "$2b$10$Ofsoo7c.F1UGw1evcwboSuAjmyxft2IMjJkCI2KQRt2dGBJvBq43W",
+      "type": "Racer",
+      "racerID": "148"
+    },
+    {
+      "username": "Danyelle.clark@hotmail.com",
+      "password": "$2b$10$CIMRzMWA/YpdnS84Rs0USeiXtm4IouEEZckjBng49XkIINXNjbiI6",
+      "type": "Racer",
+      "racerID": "316"
+    },
+    {
+      "username": "Darrin_Admin",
+      "password": "$2b$10$.2I0/oXGuaTl8FH/mFNQVeg8HmR1UcsK3ahHgyfLicKgugp7GAATO",
+      "type": "Admin",
+      "racerID": null
+    },
+    {
+      "username": "David.w.leopold@gmail.com",
+      "password": "$2b$10$wLfFUI9ADIOXRtgHh6ttTuS/00AQKOPw4gTazUxtx4dlylzqyfJMu",
+      "type": "Racer",
+      "racerID": "107"
+    },
+    {
+      "username": "davidcharlesbeaver@hotmail.com",
+      "password": "$2b$10$D9XhCb9HGYAcIKpfQasto.cGjHM4IW92sgI1ULQrXFh/5zsTxfyOq",
+      "type": "Racer",
+      "racerID": "179"
+    },
+    {
+      "username": "davisons@ccrce.ca",
+      "password": "$2b$10$2MZ05PKjOQ.KRI2phNLeiumcr2hKLYxb2FXAlMiShx495HniDYcAS",
+      "type": "Racer",
+      "racerID": "165"
+    },
+    {
+      "username": "DawnDArcy",
+      "password": "$2b$10$bLW47cQWkqvbufH/9ol86.Nr1WfLliASR8MD12akn/Qy/UBrcm9ha",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "dianamatthews00@hotmail.com",
+      "password": "$2b$10$bpFq2JLeNimYSXbSTJyx9uS/PWqJK7rhd.1ADi87Sp0wRmDJNICQS",
+      "type": "Racer",
+      "racerID": "236"
+    },
+    {
+      "username": "dkinsman@hotmail.com",
+      "password": "$2b$10$O.wEZNJi050/Ueqsi7WhFOdF4p2ycoZyw/oZHtd1r0TI1ussNv9ha",
+      "type": "Racer",
+      "racerID": "230"
+    },
+    {
+      "username": "Drew",
+      "password": "$2b$10$u1SwZMF1esu28Ov58Qadg.mdcdTEvt35r2x.qHrV5k38JKG48SwtW",
+      "type": null,
+      "racerID": null
+    },
+    {
+      "username": "DrewD",
+      "password": "$2b$10$XBNgnqFmeNAHHaBklAlR0ezr1Admoj14CttLjMcpOkeqZeatVL3Eu",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "DrewDouglas",
+      "password": "$2b$10$fLmAOogPHKYWGrfQZ4vBpeTSgQ8EtzJKtUF2dZ.88jr869V9x9HTe",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "Drewrichard19@gmail.com",
+      "password": "$2b$10$18xZtNH/cjmGs1YHCqiwueMz9E7dBZUfNqnFUS63Ce008nL.6e1l6",
+      "type": "Racer",
+      "racerID": "146"
+    },
+    {
+      "username": "durningkellie@gmail.com",
+      "password": "$2b$10$zneKUCCmSYWXsuR1rUcVj.pR/03RLRUEeU1aTipplC.nh8q02fDQq",
+      "type": "Racer",
+      "racerID": "222"
+    },
+    {
+      "username": "easterntidesacu@gmail.com",
+      "password": "$2b$10$MASn9wW3FtJ/2vjY8MUaSu/sHPrxwz5.GpM3gVM74IkBYyj.PdUrK",
+      "type": "Racer",
+      "racerID": "310"
+    },
+    {
+      "username": "ed76cormier@hotmail.com",
+      "password": "$2b$10$f5eVryZ1/NUmy5FCB.zHY.Cvt1V/oWniWklkx0vQKDn2CCTdsGjkK",
+      "type": "Racer",
+      "racerID": "174"
+    },
+    {
+      "username": "ericjalbert@yahoo.com",
+      "password": "$2b$10$ZW/SMSpX6O.JFkZMeOi8DOvseHpeNoXBlJ.57U.DzgUo/EQ01aZNq",
+      "type": "Racer",
+      "racerID": "160"
+    },
+    {
+      "username": "ericrobertmcintyre@gmail.com",
+      "password": "$2b$10$Ge9v.PqR4WiDBOvJw9DkXuEjxJR8C8CS0EAhYINwl1l97obAxTUFy",
+      "type": "Racer",
+      "racerID": "79"
+    },
+    {
+      "username": "fitzgeraldjessica@hotmail.com",
+      "password": "$2b$10$6krB3KadcE17uiPo3oHh6uBmvjNu1VuvGJuG0V2r2tBJEB2pmIB1W",
+      "type": "Racer",
+      "racerID": "304"
+    },
+    {
+      "username": "Fraser.clark@dal.ca",
+      "password": "$2b$10$hvb24OxH.PJgcdIw77phZuJ3lh5f9/jS/WgubigRCRJAFKxdbLj5u",
+      "type": "Racer",
+      "racerID": "125"
+    },
+    {
+      "username": "Gailmacf@icloud.com",
+      "password": "$2b$10$0BbayD5xP.mZCNsHg5zdeOit/9BbmY3bWDWv3a3xPq.K8yl3yea.C",
+      "type": "Racer",
+      "racerID": "115"
+    },
+    {
+      "username": "General_Admin",
+      "password": "$2b$10$vwF88a2DTxLpUaRXjya6CuO0i66a9JWHu4b93ixlcO4S9.n01zgLW",
+      "type": "Admin",
+      "racerID": null
+    },
+    {
+      "username": "ghislainsony@hotmail.com",
+      "password": "$2b$10$2s2TZ2L2dCC.t1E./hFO0etXryp8SQ18R27bHR3D/Of3d6J3DNE3e",
+      "type": "Racer",
+      "racerID": "220"
+    },
+    {
+      "username": "gouletar@gmail.com",
+      "password": "$2b$10$fuHVEj1p1a.R26KEuRAuvOCF7q2S8Zy.jnYGP7QVQBLlfciI4yjL2",
+      "type": "Racer",
+      "racerID": "182"
+    },
+    {
+      "username": "GraceSimms",
+      "password": "$2b$10$49fRzgHccFR71CWSNoOHV.eGqU/OuA8ruGwzvKNTs9lrLbcMrIpZW",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "greenerl@gnspes.ca",
+      "password": "$2b$10$rkwJQJ2ZlsehnbYNdazUmuFAMoBvoaDo3Nl1lGmO7/3NKsSVgeaae",
+      "type": "Racer",
+      "racerID": "87"
+    },
+    {
+      "username": "gregbarr@hotmail.com",
+      "password": "$2b$10$L/KdsC/YmzbzbWD794ABce9b.nGSzJHMytn4FC9i92297k2srs5fy",
+      "type": "Racer",
+      "racerID": "126"
+    },
+    {
+      "username": "gwzwicker@hotmail.com",
+      "password": "$2b$10$9qlKt3ILlrgMTtkVGfeuyOVzLxWyNvGO2BdsDegfdhFkU9DD/qgIi",
+      "type": "Racer",
+      "racerID": "45"
+    },
+    {
+      "username": "Heathermpeterson@hotmail.com",
+      "password": "$2b$10$3Psooj8rzDuw6TxNLS53PeMFR/6FcWcmZTC3X9j8uNi7GUhOuM0Xu",
+      "type": "Racer",
+      "racerID": "210"
+    },
+    {
+      "username": "Hodgkinsonneil@hotmail.com",
+      "password": "$2b$10$NW.v3TJlnAI1zwCitsFYc.nSnOSXziqsfWXU9Uq7jrsDPjttQjz2C",
+      "type": "Racer",
+      "racerID": "273"
+    },
+    {
+      "username": "hollyscothorn@hotmail.com",
+      "password": "$2b$10$nxDst2lwbZjPomRX0absO.G.9sa/exaY0cIevI3hoI5qx2PDeGdNq",
+      "type": "Racer",
+      "racerID": "258"
+    },
+    {
+      "username": "hubcycle@ns.aliantzinc.ca",
+      "password": "$2b$10$B2PCl3xanWbofmQ5Rltn.emCBvSY9WheJSdo7kpKutkPu1QhhfBtq",
+      "type": "Racer",
+      "racerID": "100"
+    },
+    {
+      "username": "Huntershaneelliott@gmail.com ",
+      "password": "$2b$10$wubnmCE7ZLfrW.BLk1/Z3uumrimQEdq1j9FKOxYEz0GnTpj2BMz1G",
+      "type": "Racer",
+      "racerID": "290"
+    },
+    {
+      "username": "igbhenderson@gmail.com",
+      "password": "$2b$10$0JE.P48iv.BH6tuAUDNiEu4zPwoUZiCFADfwZNXAIpK6.RzkHzfC2",
+      "type": "Racer",
+      "racerID": "145"
+    },
+    {
+      "username": "infosalon881@gmail.com",
+      "password": "$2b$10$M/HIKc/qKYxdTnsJzNfrbOkmhBAgPW18c1Z8jMIGXlxT105p.ihm2",
+      "type": "Racer",
+      "racerID": "198"
+    },
+    {
+      "username": "Irvingmichael82@gmail.com",
+      "password": "$2b$10$53Jau0kZ7xh6Bz9o6auj6./4OsGwRtNVhrbKD0dZhloFJx2aAx4mG",
+      "type": "Racer",
+      "racerID": "297"
+    },
+    {
+      "username": "Jackieanddonnie@gmail.com",
+      "password": "$2b$10$vI7UFmkE.99ePTnaWS87kOuSJF18MQ7/lk7stpnlYFrnrnyg8iVXS",
+      "type": "Racer",
+      "racerID": "247"
+    },
+    {
+      "username": "Jaclynijohnston@gmail.com",
+      "password": "$2b$10$bK2tWPAZgrlJagu4085ZLO08.LXXlzHm35IoYpHRN9HeX3qZU4pDm",
+      "type": "Racer",
+      "racerID": "246"
+    },
+    {
+      "username": "jayne6611@gmail.com",
+      "password": "$2b$10$goowb1JRUKm/rEKYVSJwie.1dntHvwBjJVHah5anFbV72UNJnlkl2",
+      "type": "Racer",
+      "racerID": "332"
+    },
+    {
+      "username": "jcottend@dal.ca",
+      "password": "$2b$10$TowRGNpXjWu4KBkYsePSqu/KCbdNLH6V0NGJhmfALtSw5d0rL412e",
+      "type": "Racer",
+      "racerID": "242"
+    },
+    {
+      "username": "Jdillman@eastlink.ca",
+      "password": "$2b$10$QwsgskjzUQ6fdvBoaLDk2OoM6fwa2FjaP7koqqVblY0Tyg7b74w3e",
+      "type": "Racer",
+      "racerID": "218"
+    },
+    {
+      "username": "jeff@bikemonkey.ca",
+      "password": "$2b$10$avOc5nHUTl4S8PSSDTnp..JQ52VuHwV/0Rc1bVz3oXrzsaQpMijGm",
+      "type": "Racer",
+      "racerID": "187"
+    },
+    {
+      "username": "jeffmackinnon2015@gmail.com",
+      "password": "$2b$10$MXFyM6gkcxJyUdsKisGpPOPuldlDiJ9KuWqoQWrKJQwTIOWU6v0MG",
+      "type": "Racer",
+      "racerID": "111"
+    },
+    {
+      "username": "jennturnbull@hotmail.com",
+      "password": "$2b$10$vCkA6X7bnEF48Zz/nEq1pu.R/i/cSe6V7a/zkWu4MDR6Elaxhg5rS",
+      "type": "Racer",
+      "racerID": "264"
+    },
+    {
+      "username": "jen_bartlett19@hotmail.com",
+      "password": "$2b$10$Jq5IU01T3D8VDMH3pgX.3.vZlYJIlvd9DxGrBTd8iIaUDEX.M5IVe",
+      "type": "Racer",
+      "racerID": "44"
+    },
+    {
+      "username": "jjbmoto@hotmail.com",
+      "password": "$2b$10$NJpEklxgK1nzARmdZ8WqGO2bkB0eX60T4Zfky2WZUwCLm0ki0wtnm",
+      "type": "Racer",
+      "racerID": "186"
+    },
+    {
+      "username": "joanna.macgillivary07@gmail.com",
+      "password": "$2b$10$6XLUYL8SC4LHvtut8y10aetuRYUmeCBQKL.QZenv2DKE9iSnDFyQa",
+      "type": "Racer",
+      "racerID": "283"
+    },
+    {
+      "username": "Jocelynlcox@hotmail.com",
+      "password": "$2b$10$p2h5K15n5b9Ep27WvwKkG.jlib7rQTjlo8RlEWFHamhXP4OwxM9DG",
+      "type": "Racer",
+      "racerID": "226"
+    },
+    {
+      "username": "jodybower@hotmail.com",
+      "password": "$2b$10$tMGp4.cK16uMKSxQgN4x9O83hAYwLsBLcLtD/yFePUYrw3BDVlfTW",
+      "type": "Racer",
+      "racerID": "73"
+    },
+    {
+      "username": "jonathanalanjulien@gmail.com",
+      "password": "$2b$10$fIjhDi1nzz9tUxipGvPrEO69Xj2F7kaMCsnFrc8gcDd/qWSaOeKHi",
+      "type": "Racer",
+      "racerID": "331"
+    },
+    {
+      "username": "josh.arenburg@nbpcd.com",
+      "password": "$2b$10$DwWsaxIiO4tnsQHHJ3KJk.MNTF40fwflaTyAKUKZY/cBtTcLdpzQe",
+      "type": "Racer",
+      "racerID": "167"
+    },
+    {
+      "username": "joshsampson1986@gmail.com",
+      "password": "$2b$10$Yv71snhe0ntsMYWg1Vsmgusr3/gx5ucLqYOZZQPxsJBFRvvG9QeeG",
+      "type": "Racer",
+      "racerID": "219"
+    },
+    {
+      "username": "j_bugden@hotmail.com",
+      "password": "$2b$10$/UiS8CFBBV/rklMV7u7/7Oa6tHAngESgrxQZ/.ICC0L6Ps42d.WY2",
+      "type": "Racer",
+      "racerID": "325"
+    },
+    {
+      "username": "karamacneil@gmail.com",
+      "password": "$2b$10$YP.GKrlP0ztg32Se2jWrI.FRqJhxQSnuvIL1v3yLYpys12x2dumD2",
+      "type": "Racer",
+      "racerID": "78"
+    },
+    {
+      "username": "Katie@kmfathletictherapy.com",
+      "password": "$2b$10$VZdF2bXYLkTFvPC1DPW/6uELot7KBuHnX6PLOQpoY/ZyQYuG3kmpO",
+      "type": "Racer",
+      "racerID": "193"
+    },
+    {
+      "username": "kelleyleil@gmail.com",
+      "password": "$2b$10$A5yw7UBvYPVuGag9ERGxYuyvtbSW3Y8xdWEYTyUvAe0Q6n3d864zS",
+      "type": "Racer",
+      "racerID": "139"
+    },
+    {
+      "username": "Kellie_Admin",
+      "password": "$2b$10$qA6Uce.0pt1uApWO/OGhmeSBlXFypl8pzRm81yOMbu/xB1xG5p/xu",
+      "type": "Admin",
+      "racerID": null
+    },
+    {
+      "username": "Kerry_chisholm@hotmail.com",
+      "password": "$2b$10$XAxnVTr5uBLr5H.3yPct2.RmRHutp0RIkyItG/7sl.hGsixr7xdH2",
+      "type": "Racer",
+      "racerID": "280"
+    },
+    {
+      "username": "Kim",
+      "password": "$2b$10$Ay43HI3Wd0aDSiTOYjRt5O7NwaY9wHgjpEYmGrOIgllJkxG/bAWjG",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "kim.maccallum@outlook.com",
+      "password": "$2b$10$lQRiGVXEWlPnFIjtQ7uW0.Xc/aUBx8b2WYQZi4RYSIaHRizHprpJS",
+      "type": "Racer",
+      "racerID": "158"
+    },
+    {
+      "username": "kmacdonald7880@gmail.com",
+      "password": "$2b$10$UjOhJXszwyv8mv2X9XISXu.vS/U9WKlMsL2zQecEUBizbGGzLEl6i",
+      "type": "Racer",
+      "racerID": "163"
+    },
+    {
+      "username": "kpmacintosh@rogers.com",
+      "password": "$2b$10$di9c7eXni70.7/Y3g1sXAOtR2ide13fzXJmiwz3ezVW2FLQkuodq.",
+      "type": "Racer",
+      "racerID": "64"
+    },
+    {
+      "username": "Krista.mikail@nshealth.ca",
+      "password": "$2b$10$G367I/YsDR8YPTpOUT/UmOkLiSCEIU42af54TKu7SePcqJWR6RKZ2",
+      "type": "Racer",
+      "racerID": "232"
+    },
+    {
+      "username": "Krystleclyke@gmail.com",
+      "password": "$2b$10$ksCL3Zhm/o9FrKhFIBrXMebcy/tw35AFVuVmHhfcPkYYq8QeUjEOe",
+      "type": "Racer",
+      "racerID": "199"
+    },
+    {
+      "username": "ktmacneil@live.ca",
+      "password": "$2b$10$I9NvP2.iQ/2VuMiucZ8.6eUVQC54ZQsbxDv900p.gz4rLIs1UXnmq",
+      "type": "Racer",
+      "racerID": "133"
+    },
+    {
+      "username": "kymber07@hotmail.com",
+      "password": "$2b$10$oBxJTqv/46Jpn7rhIIXroO3fIzZQENZqjgInKRoi7J679pOvmvKoW",
+      "type": "Racer",
+      "racerID": "284"
+    },
+    {
+      "username": "kymber1980@icloud.com",
+      "password": "$2b$10$ngadGsa/8kx4xIn/mBexjucgF8dmjZv8K96pz5uHUTEKHXir1oqwC",
+      "type": "Racer",
+      "racerID": "285"
+    },
+    {
+      "username": "laurajmacl1@gmail.com",
+      "password": "$2b$10$WTJmzUVFXy7XZhPCKLekBer8rc7IPQSXRqwVlEdg1iEjEsgSwjN.K",
+      "type": "Racer",
+      "racerID": "201"
+    },
+    {
+      "username": "leahbenoit27@gmail.com",
+      "password": "$2b$10$WxXYsYrVD5lPWPleAr6yD.Yw37C3H9.LcvEdimdHFIoDnEX2mWVY2",
+      "type": "Racer",
+      "racerID": "300"
+    },
+    {
+      "username": "lexmclaughlin7@gmail.com",
+      "password": "$2b$10$lkTKOS8GYs0wmLxKerib6.BZx3.1anZmtIsqHJHs9R3Z9GKGW4p9.",
+      "type": "Racer",
+      "racerID": "243"
+    },
+    {
+      "username": "LindsayC",
+      "password": "$2b$10$Ph9Nrh4AsxQYhXVcBhaxFu7/ZhWGXEgmWlXYwV0ebMM32QQFWkGfW",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "LindsayCummings",
+      "password": "$2b$10$38Za//H1c1OTSxmbj8GXsOKJl5bEE5l3QTMgLhpC4ZMp2XSKCdqNO",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "lindsaymcumming@gmail.com",
+      "password": "$2b$10$FrXOIzjCvla6nfy3gvAK/OzoFhLjjrWM5A/13aGvqrv8HoIuwfFaO",
+      "type": "Racer",
+      "racerID": "105"
+    },
+    {
+      "username": "lindsaymountain@gmail.com",
+      "password": "$2b$10$fXVGjtFQ50cpEBDxj4tyb.Tr/SY5GE02RYcrCcp7nrwWjFDGEhDk2",
+      "type": "Racer",
+      "racerID": "83"
+    },
+    {
+      "username": "lisa74gavin11@gmail.com",
+      "password": "$2b$10$QPC2G61q25bu.4L4zu/wAO1xlmFCGoMC9EOfJHhutSE.1hdGpQAiO",
+      "type": "Racer",
+      "racerID": "248"
+    },
+    {
+      "username": "Locheada@mcft.ca",
+      "password": "$2b$10$xY2xU9V3TXXamoxsiAfQlODpaVZFM7IGOVG83BJL0Ar4M7T.79fpi",
+      "type": "Racer",
+      "racerID": "326"
+    },
+    {
+      "username": "lubasy@gmail.com",
+      "password": "$2b$10$ALWtgoh7qOnkXEv1UYaqZuFrRq04/VbhfWzDWIsQ4wsYS9IvkgW3e",
+      "type": "Racer",
+      "racerID": "217"
+    },
+    {
+      "username": "Macdonki625@gmail.com",
+      "password": "$2b$10$NyV/lBwmhota3Jx3rC7lX.Co8/aRMjXlVnt00Dzi/JVrMhs8c7J3K",
+      "type": "Racer",
+      "racerID": "294"
+    },
+    {
+      "username": "mackinnon_393@hotmail.com",
+      "password": "$2b$10$59nlUyStS1VwtBvFE9R1geaZserng4iWHQO2IKcw0ZBw3qqqkVtUC",
+      "type": "Racer",
+      "racerID": "54"
+    },
+    {
+      "username": "mandyraye19@hotmail.com",
+      "password": "$2b$10$eDvuoV.SDYBjzCsFh.rkhOCS9vtfjXzm2nXU.Dv8GEgq6RQB9nRyK",
+      "type": "Racer",
+      "racerID": "53"
+    },
+    {
+      "username": "marissa_peers@hotmail.com",
+      "password": "$2b$10$ILcf5T0pHgdWfJhmxFnlauvNEvWHVhpuMWMrqB3xBsYm7ZFH8xHK.",
+      "type": "Racer",
+      "racerID": "99"
+    },
+    {
+      "username": "Mark.e.macisaac@gmail.com",
+      "password": "$2b$10$Ll1cMefkkzTkvZ8BPEA21uCh6ytCV1Oxhi7YHUvZ76YInsIWd9lLy",
+      "type": "Racer",
+      "racerID": "330"
+    },
+    {
+      "username": "mason.trucking@ns.sympatico.ca",
+      "password": "$2b$10$GMyh4.Hg7qv54vNaMDF6rOWwTHUsLL1xAGnz1fZVVS8/YSrRqfSvi",
+      "type": "Racer",
+      "racerID": "88"
+    },
+    {
+      "username": "Matthew.white@northernpulp.com",
+      "password": "$2b$10$1cQkXmeC8KwH52lRbsOK.ucvZ7MlubDKmTuHFjLzbR7dMCXUs2pju",
+      "type": "Racer",
+      "racerID": "189"
+    },
+    {
+      "username": "matthewcoulter271@gmail.com",
+      "password": "$2b$10$hE4B89IA.KeU3cGfnxuyFec2b2e4VqMKR1CttdNdJgldXgQiJUvkO",
+      "type": "Racer",
+      "racerID": "200"
+    },
+    {
+      "username": "Matt_Admin",
+      "password": "$2b$10$9sbn3QOs.0694XqqAt/0p./7xB5oP8d4AwtaZku/WMgoUT3b1Q0RG",
+      "type": "Admin",
+      "racerID": null
+    },
+    {
+      "username": "Mayamhoehne@gmail.com",
+      "password": "$2b$10$NQs0wjfyp5uun5z3SiqhT.9M4YlrCKgJOVMQpn9lgbi62fDNZSjMm",
+      "type": "Racer",
+      "racerID": "259"
+    },
+    {
+      "username": "mcschooten@gmail.com",
+      "password": "$2b$10$FrXOIzjCvla6nfy3gvAK/OzoFhLjjrWM5A/13aGvqrv8HoIuwfFaO",
+      "type": "Racer",
+      "racerID": "231"
+    },
+    {
+      "username": "meagandoucet@outlook.com",
+      "password": "$2b$10$ZTdKOnzVboIOfmMs8wGqleg4GjYrsPXrI75m/.eZfD2KZ/8iEiOZ6",
+      "type": "Racer",
+      "racerID": "43"
+    },
+    {
+      "username": "Mechanic7@hotmail.com",
+      "password": "$2b$10$0R/SJ5DXgOFaQmSkC/Hu.u9ef/teL9s69EwY5V0DIqzIV6/HFECh.",
+      "type": "Racer",
+      "racerID": "301"
+    },
+    {
+      "username": "megansfitz@gmail.com",
+      "password": "$2b$10$M5T3OEaNygPvZS5gsL6YxuAbjsQtkDU4AVnjDqBI/3gr0CYHQQ5HS",
+      "type": "Racer",
+      "racerID": "311"
+    },
+    {
+      "username": "melnettleton@gmail.com",
+      "password": "$2b$10$kdOL0O2ifIz89N2TpuqTzed1gblzH8sCZZZ1if3BTHUOkjnUKUWLS",
+      "type": "Racer",
+      "racerID": "214"
+    },
+    {
+      "username": "mhanes@pvlmoving.com",
+      "password": "$2b$10$xM0lmGmvFG4Q6nWb5s2.iu.ubGumviAo0Lx8hXVl3bMnpPf0MwoVq",
+      "type": "Racer",
+      "racerID": "192"
+    },
+    {
+      "username": "michelle_dillman@outlook.com",
+      "password": "$2b$10$lenmd1kq7pAvEm7RkCl1KelfHA7Cy2bM7JGum/oKkR3euA/uiOcdm",
+      "type": "Racer",
+      "racerID": "279"
+    },
+    {
+      "username": "MikeK",
+      "password": "$2b$10$1PHZ91Q5WMM079nvquzJS.5Fd40dLPrkpzyt0AEsySJy0AaloVyNm",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "misti.lamont@bellmedia.ca",
+      "password": "$2b$10$8h5Eo.hYZlApG/Y09XlzEue2wxGJFgETMwIwB3Kl0hGpRRY4f0NcO",
+      "type": "Racer",
+      "racerID": "82"
+    },
+    {
+      "username": "mjsutherland7@icloud.com ",
+      "password": "$2b$10$obxlNUJswUK.880SwLZzwOyQKeqiVp0uC5ITIxaTn6W98NlJ8gdUa",
+      "type": "Racer",
+      "racerID": "134"
+    },
+    {
+      "username": "mtparkerhouse@hotmail.com",
+      "password": "$2b$10$bVKzw3QeB0eqydeVkTwszeDP6YzB6iIaJ7NBhwwUa/IBY.Yr/5ZXu",
+      "type": "Racer",
+      "racerID": "212"
+    },
+    {
+      "username": "myorke72@hotmail.com",
+      "password": "$2b$10$j1ks/8OQgpnBVepv68es6.oPxx2pfwCqt/0V3eYMG1AZ57nrJ9B/G",
+      "type": "Racer",
+      "racerID": "58"
+    },
+    {
+      "username": "nancy_chestnut@hotmail.com ",
+      "password": "$2b$10$kes8oXw0LwPaAxH77c8c/.rs8z.tcp6cm8QXsi/yqO6.YRxxoQHga",
+      "type": "Racer",
+      "racerID": "177"
+    },
+    {
+      "username": "ncrowe99@gmail.com",
+      "password": "$2b$10$YYRytxp8B8B91UBXsB9CduZevwn69r881Dc3jtg6GVsz8ZgG4Gj1C",
+      "type": "Racer",
+      "racerID": "81"
+    },
+    {
+      "username": "ndouglas@dfpei.pe.ca",
+      "password": "$2b$10$kzaaNLx0h6IzXqB5CcG38uZaXyhOfJlr93G0GFOwRKxjdhKhDIs/u",
+      "type": "Racer",
+      "racerID": "141"
+    },
+    {
+      "username": "nickfisher@eastlink.ca",
+      "password": "$2b$10$rQKXw.XatqZ0P3Yh3YjR1.Ov4eRlll2itrMEqP4LZt30pVuiDSg.q",
+      "type": "Racer",
+      "racerID": "268"
+    },
+    {
+      "username": "nicole.ryan.xo@hotmail.com",
+      "password": "$2b$10$tY0rpdZYvy7zFVfbBuhfI.i0R69/aVwA3.XVFNz1xtac4aCDHBvgK",
+      "type": "Racer",
+      "racerID": "286"
+    },
+    {
+      "username": "nigebrooks@yahoo.com",
+      "password": "$2b$10$gMd0SllBTxKaq2c70NEmS.USDfDLpKRnR77TSXtYa6xu9Q.t3muWm",
+      "type": "Racer",
+      "racerID": "254"
+    },
+    {
+      "username": "NigelB",
+      "password": "$2b$10$CDGO2WoiPppu5pWJ4HYHy.pJXWkgBrJEWSuRNHVzQkoE.gQBb4QI6",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "njess21@hotmail.com",
+      "password": "$2b$10$DZZrbUINwAfhVzPP5.9bG..IQ2l..jT4Re7kT97fGYk00NpvoYyYK",
+      "type": "Racer",
+      "racerID": "312"
+    },
+    {
+      "username": "noah@ursudio.com",
+      "password": "$2b$10$CbBFIZDk8rGPXaNd7DBBqO2Fa0mVbBh6rz5hg9JBSW/ygPbzqKAP6",
+      "type": "Racer",
+      "racerID": "149"
+    },
+    {
+      "username": "Nolterkj@ccrce.ca",
+      "password": "$2b$10$Q8kSDVrA0.3M6FNXbXov/.pdaP2kFFglmbk4SR9rtUBMg7bk20Ud2",
+      "type": "Racer",
+      "racerID": "291"
+    },
+    {
+      "username": "november_23@hotmail.com",
+      "password": "$2b$10$rrVA1fyMwjMscmflobzG5.8V8z9bXoI2hPDX63N7bT4k2zK/qAo5y",
+      "type": "Racer",
+      "racerID": "113"
+    },
+    {
+      "username": "nupatterson@gmail.com",
+      "password": "$2b$10$fpLE7bLx9J7nI.f1MYD3c.MWuMc5zBnOmyt2Gn9FKRJnPLPe2RHju",
+      "type": "Racer",
+      "racerID": "322"
+    },
+    {
+      "username": "Oconnellchris102@gmail.com",
+      "password": "$2b$10$7M66aZ0dn0UBDh0j254MOOG1S1qhHDvAlSBnK1e56T2CaU7ewcD/K",
+      "type": "Racer",
+      "racerID": "221"
+    },
+    {
+      "username": "pattyfoster@hotmail.com",
+      "password": "$2b$10$JU7YrwHZBDsN.IrLj946dOph7Jfyrn7ZWcAY8vetDEg3QgR8.r0Zi",
+      "type": "Racer",
+      "racerID": "147"
+    },
+    {
+      "username": "PeteH",
+      "password": "$2b$10$3JyvMgAyr39QNk2ptfIViOKk5htBXk7sJPWRNxcnBZlfdeQoUTGGe",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "PeterHenderson",
+      "password": "$2b$10$sEsNuw.k4XzRCGcFnQcUaOScBslLiWvsnojtBHDidWeK2vC6JG5nC",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "ppatterson@ljpattersonsales.com",
+      "password": "$2b$10$/UBzIvVdBJzm8KEy4PqSCOx69RKsdQdfzLYjPwReC7gN4kgFVuFpa",
+      "type": "Racer",
+      "racerID": "114"
+    },
+    {
+      "username": "Pwillcott@hotmail.com",
+      "password": "$2b$10$.w7tUGUHYtQDC2/ZN7u5LO1VbCsiRX1Li.YrqU3yXJvv..c/V9XNO",
+      "type": "Racer",
+      "racerID": "173"
+    },
+    {
+      "username": "rachbeat@gmail.com",
+      "password": "$2b$10$t98e97uOa1F7N8IRCasJuewgvvyvIrt.HRBNrjdDHQXaBZTdpq9pG",
+      "type": "Racer",
+      "racerID": "228"
+    },
+    {
+      "username": "Randal.r.gray@gmail.com ",
+      "password": "$2b$10$b0rtzFuQ2iPQMWfKlzhXYeXLRZzv8JS.N7fJzhANdfd5GhLdNlzpm",
+      "type": "Racer",
+      "racerID": "119"
+    },
+    {
+      "username": "rcheverie@perennia.ca",
+      "password": "$2b$10$4c4FvDZ012k70IO3B2Fub.O0sQTQkO7hUMnu7OqE42oj36tkuFK7y",
+      "type": "Racer",
+      "racerID": "68"
+    },
+    {
+      "username": "rebecca_worthington@hotmail.ca",
+      "password": "$2b$10$NYHnCz/nEVskfi/jzUCVQOQcINmOt4T./fEfyOpV70iqbS1cgl/2q",
+      "type": "Racer",
+      "racerID": "314"
+    },
+    {
+      "username": "redmondmj@gmail.com",
+      "password": "$2b$10$FrXOIzjCvla6nfy3gvAK/OzoFhLjjrWM5A/13aGvqrv8HoIuwfFaO",
+      "type": "Racer",
+      "racerID": "30"
+    },
+    {
+      "username": "redmondo",
+      "password": "$2b$10$KR7NqajSzxdD0vgYq0qmxuHAdkSpOCmdWleq7rE2D0cEzC5AcSgiy",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "rejean.comeau@nshealth.ca",
+      "password": "$2b$10$N2n0JP1L.7bn4H3EBlHMPOzJzf8vTFl7WQOrolZcm5609JL9xiRvK",
+      "type": "Racer",
+      "racerID": "50"
+    },
+    {
+      "username": "rf_1970@hotmail.com",
+      "password": "$2b$10$YIDkIThuP71F48fSok0vF.4Xmhbb8FeJxDWHX5x8COlm3v62PscYa",
+      "type": "Racer",
+      "racerID": "207"
+    },
+    {
+      "username": "rmacgregor9@gmail.com",
+      "password": "$2b$10$YqZErFbZoKHVj93p.e01FeGAS5LmoSTD3Rni8KkOqfSSbu2cr/pSu",
+      "type": "Racer",
+      "racerID": "108"
+    },
+    {
+      "username": "robins676@hotmail.com",
+      "password": "$2b$10$3SAT2.OgsQWjBCu9B7b1V.w6B38fZpA6SxMmor49kOo2DQ30Ib/e.",
+      "type": "Racer",
+      "racerID": "104"
+    },
+    {
+      "username": "roddie.maclean72@gmail.com",
+      "password": "$2b$10$EEv6o5ckML4FKTQAjfsZ7.tNUXeWugqH2pwoF6sqWBFckOvnv4hN.",
+      "type": "Racer",
+      "racerID": "101"
+    },
+    {
+      "username": "rosko54@msn.com",
+      "password": "$2b$10$oBsieLJQxMf7cgaUS3qIMu1AfLNl7XoOR6XEsIqNiKdg6QZCd0Pra",
+      "type": "Racer",
+      "racerID": "98"
+    },
+    {
+      "username": "Ryanfarris78@gmail.com",
+      "password": "$2b$10$gW9gL0CTeD.d/20erFcXN.8n/stIE8LHA/b4.e8ZODcRE6r0mFB2y",
+      "type": "Racer",
+      "racerID": "309"
+    },
+    {
+      "username": "RyanGrant",
+      "password": "$2b$10$ktfeU6RnMkU./yfIWDZLNO..tEoTqRdQyXFKCmRwT0LIhVeivWWbm",
+      "type": "Volunteer",
+      "racerID": null
+    },
+    {
+      "username": "ryslobster@hotmail.com",
+      "password": "$2b$10$6f.RyJZFyAcG42Z3RaZQVO2tGhJlI4xNl7QlqPCRh.ju5fKV1UZeO",
+      "type": "Racer",
+      "racerID": "89"
+    },
+    {
+      "username": "samanthamoore8@outlook.com",
+      "password": "$2b$10$8AcMt0HPDzxW/R5xcBsrLerUakTDpvQO5nndiLXI8zL9jOW3yUv56",
+      "type": "Racer",
+      "racerID": "52"
+    },
+    {
+      "username": "sambeafarm@gmail.com",
+      "password": "$2b$10$pOJKFgv.soAUE7WRc4idC.QuQxXqfh19g4E3bD9vqS1JjtUuQkDxK",
+      "type": "Racer",
+      "racerID": "307"
+    },
+    {
+      "username": "sarahcrossman7@hotmail.com",
+      "password": "$2b$10$BxPSqLFZLcDOaT6DQw7HyuRAGimYBaIhchrY2tXT0OE8HghVx1BIm",
+      "type": "Racer",
+      "racerID": "56"
+    },
+    {
+      "username": "sarahmeekins@gmail.com",
+      "password": "$2b$10$NOTIGqsF2TWJca0VSvcvke0ATf8Ag2gYW6CpQVY3kEZBRNtX22dXK",
+      "type": "Racer",
+      "racerID": "132"
+    },
+    {
+      "username": "shali.manuel@gmail.com",
+      "password": "$2b$10$H2HcRmo7SOmxUhVMIWtH8.KSpRqb5u6LQBbA3F2sk4Ji1x5P1oFAS",
+      "type": "Racer",
+      "racerID": "120"
+    },
+    {
+      "username": "shannonraerobertson@gmail.com",
+      "password": "$2b$10$LfJTJEOcoj/AoLW./LOhOuqz7Dzq/hq0lPz/Aa334.m3/Enbwz8im",
+      "type": "Racer",
+      "racerID": "127"
+    },
+    {
+      "username": "sheina.young@gmail.com",
+      "password": "$2b$10$WqNcNp7eYtBZhz4knnkXH.GnpBOcv7M/fxi/jMExjPJDTzSiToQ7m",
+      "type": "Racer",
+      "racerID": "143"
+    },
+    {
+      "username": "shipleyc@ccrce.ca",
+      "password": "$2b$10$i1nCFE3WuS5b/mr2IJpvS.7AwuloxRXLwqXnvun.9maXPpgScXSgC",
+      "type": "Racer",
+      "racerID": "140"
+    },
+    {
+      "username": "sizzler@eastlink.ca",
+      "password": "$2b$10$SGpazC0BvcESlGQ5yk6zKu5dtz.NE7rgE4OEcnrtjnVJdkRZAYY7u",
+      "type": "Racer",
+      "racerID": "155"
+    },
+    {
+      "username": "sn.green13@gmail.com",
+      "password": "$2b$10$LcU12VJcMnizMt7iY2x22OadeychpBMT5lwEMRVMN/QcWAC5D.JFW",
+      "type": "Racer",
+      "racerID": "329"
+    },
+    {
+      "username": "stephanielpalmer@eastlink.ca",
+      "password": "$2b$10$zT9xXQ.4UzYKZhb.95xWsuoToiaRVkAGqidZIa0MGi4aIC68KG6y6",
+      "type": "Racer",
+      "racerID": "276"
+    },
+    {
+      "username": "sue-ellensheppard@hotmail.com",
+      "password": "$2b$10$kK7kHQV5YqvBfqr/gSye9OrU/0pqz3Kn0moTg5J9Tjou3zxOzGPKq",
+      "type": "Racer",
+      "racerID": "299"
+    },
+    {
+      "username": "Swim_roberts@hotmail.com",
+      "password": "$2b$10$76T0Ew/JPqqf0iNmRZUZmO0mgf4WCVdlE7ep3R5Cx70rln1nf8ZCu",
+      "type": "Racer",
+      "racerID": "65"
+    },
+    {
+      "username": "swinks@hotmail.com",
+      "password": "$2b$10$q5EnfUIUc/GLEBxyUOTUNu4HZZSlpc8eY37MCim7VZJRrlsrnnNnm",
+      "type": "Racer",
+      "racerID": "249"
+    },
+    {
+      "username": "tania_oleary@hotmail.com",
+      "password": "$2b$10$ezeG4zQ7K.yfxw6xWntzUerlx8G74cTlbwrjLRd1SCm4S91jFh7xi",
+      "type": "Racer",
+      "racerID": "317"
+    },
+    {
+      "username": "thomaskayter@gmail.com",
+      "password": "$2b$10$F2CNrm7RVjFC/p88uZY3Fu3YFh6WMiYG6pnY1T1EfqtOBMlDjdg/O",
+      "type": "Racer",
+      "racerID": "275"
+    },
+    {
+      "username": "Thor_Admin",
+      "password": "$2b$10$e2Yai1YhEfztFqMGW2pGyOh7mcED10aHRVUz9si/ye0B5NrbPh9Eq",
+      "type": "Admin",
+      "racerID": null
+    },
+    {
+      "username": "Tina_Admin",
+      "password": "$2b$10$eXkCZW5veejLvR0.OqmD5.3Pf90pnNZ9V26qVztMADXaSW28qFFnG",
+      "type": "Admin",
+      "racerID": null
+    },
+    {
+      "username": "tlutzcam@ns.sympatico.ca",
+      "password": "$2b$10$R.hEFVDmueTPfh/nbKw4POXRi2UYm.ETbanwUQ6AKxDjesws9x0lm",
+      "type": "Racer",
+      "racerID": "122"
+    },
+    {
+      "username": "toddcroft1@gmail.com",
+      "password": "$2b$10$NIFu2JeBQCJvFRdlFJeY4OFXK3DI5zAbiAV5Rpop1SoC46G6ekI1y",
+      "type": "Racer",
+      "racerID": "203"
+    },
+    {
+      "username": "tom.hahn@eastlink.ca",
+      "password": "$2b$10$NZZ/6OeDEOiAWA3ZsqcZk.LOyq3OrBl.d1DJ0wS8dQ6ZQS3Y7yfhG",
+      "type": "Racer",
+      "racerID": "161"
+    },
+    {
+      "username": "tom_malone_11@hotmail.com",
+      "password": "$2b$10$zCOTfJXRoT/VT7HhSB/oLepRLdxYh0eBZT3UIsaqhm2NptZDqCBYu",
+      "type": "Racer",
+      "racerID": "324"
+    },
+    {
+      "username": "Tuckera84@hotmail.com",
+      "password": "$2b$10$4TZSOejIDA18Jt3of4aUqumOWgfpNuV/C5qlpdZIeDyX6IELBy3hy",
+      "type": "Racer",
+      "racerID": "234"
+    },
+    {
+      "username": "vandenburgfamily@outlook.com",
+      "password": "$2b$10$M93uzXuPvvN3Ypn2cGDYfe7Qrnj7UTCMpV/ErRvOMYVN5C0JS3Chm",
+      "type": "Racer",
+      "racerID": "281"
+    },
+    {
+      "username": "vanessafraser26@hotmail.com",
+      "password": "$2b$10$22FqFXzOzpyyyjGbvQbjy.gYXy8H7tKaLrOb1bwkZu3d2rDMFea8q",
+      "type": "Racer",
+      "racerID": "335"
+    },
+    {
+      "username": "Vckyfields@gmail.com",
+      "password": "$2b$10$3GzaXB3JR3G2NBKedCdwmuwPY5Rl41HjQeYYfdMvUQSwfamTlOcvi",
+      "type": "Racer",
+      "racerID": "206"
+    },
+    {
+      "username": "wendypratt2008@gmail.com",
+      "password": "$2b$10$vUf2siY0.cDUjMl7Ua25SOD/IJkHxHPHJLX7gmYG.J1kSVrxFX8tS",
+      "type": "Racer",
+      "racerID": "208"
+    },
+    {
+      "username": "wesley_mcneil@yahoo.ca ",
+      "password": "$2b$10$BCGOmHKIHLmEVEhIdNIqdOEYz9bda0hbTOCHH9lW95VgCFhBlFJva",
+      "type": "Racer",
+      "racerID": "336"
+    },
+    {
+      "username": "wilkie2d@gmail.com",
+      "password": "$2b$10$5vm78F/s6jwdIdF20Al5S.TJGRWh9oZ90TpL81GX5EJfeO4aKoQ4.",
+      "type": "Racer",
+      "racerID": "318"
+    }
+  ]
+}

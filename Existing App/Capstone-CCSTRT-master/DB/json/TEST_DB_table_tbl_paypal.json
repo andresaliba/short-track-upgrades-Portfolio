@@ -1,0 +1,6 @@
+{
+  "type": "table",
+  "name": "tbl_paypal",
+  "database": "TEST_DB",
+  "data": [{ "price": "25" }]
+}
