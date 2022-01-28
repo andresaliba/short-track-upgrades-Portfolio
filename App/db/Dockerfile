@@ -1,8 +1,10 @@
-FROM mongo
+FROM node:lts-alpine
 
-WORKDIR /usr/db
+WORKDIR /dbSeeder
 
-# seed MongoDB database with starting collections
-COPY *.js /docker-entrypoint-initdb.d
+COPY package-*.json /dbSeeder/
+COPY . . 
 
-EXPOSE 27017
+RUN npm install
+
+CMD ["node", "./src/dbSeeder.js"]
