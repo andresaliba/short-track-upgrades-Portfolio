@@ -1,6 +1,7 @@
 require("dotenv").config();
 const { connect } = require("../config/db");
 const jwt = require("jsonwebtoken");
+const cors = require("cors");
 const bcryptjs = require("bcryptjs");
 const express = require("express");
 const User = require("../models/user");
@@ -9,19 +10,28 @@ const app = express();
 
 app.use(express.json());
 
+app.use(cors());
+
 connect();
 
 // Register a new user
+// TODO - add validation
 app.post("/api/register", async (req, res) => {
   try {
     const { username, password, email, firstName, lastName } = req.body;
     if (!(username && password && email && firstName && lastName)) {
-      res.status(400).send("Missing required fields");
+      res.status(400).json({
+        success: false,
+        message: "Please fill out all fields",
+      });
     }
     // Check if the username is already taken
     const user = await User.findOne({ username });
     if (user) {
-      res.status(409).send("Username already taken");
+      res.status(409).json({
+        success: false,
+        message: "Username is already taken",
+      });
     }
 
     // Encrypt the password
@@ -41,7 +51,7 @@ app.post("/api/register", async (req, res) => {
       },
       process.env.JWT_SECRET,
       {
-        expiresIn: "2h",
+        expiresIn: "24h",
       }
     );
 
@@ -56,11 +66,17 @@ app.post("/api/register", async (req, res) => {
   }
 });
 
+// Login a user
+// TODO - add validation
 app.post("/api/login", async (req, res) => {
   try {
     const { username, password } = req.body;
     if (!(username && password)) {
-      res.status(400).send("Missing required fields");
+      res.status(400).json({
+        success: false,
+        message: "Missing required fields",
+      });
+      return;
     }
 
     const user = await User.findOne({ username });
@@ -75,21 +91,29 @@ app.post("/api/login", async (req, res) => {
       },
       process.env.JWT_SECRET,
       {
-        expiresIn: "2h",
+        expiresIn: "24h",
       }
     );
 
     user.token = token;
     await user.save();
 
-    res.status(200).send(user);
+    res.status(200).json({
+      success: true,
+      message: "Login successful",
+      token,
+    });
   } catch (err) {
     console.log("Error Loggin In");
     console.error(err);
-    res.status(500).send("Server error");
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
   }
 });
 
+// API Token Test
 app.get("/api/token-test", async (req, res) => {
   try {
     // Get the token from the header
@@ -110,10 +134,16 @@ app.get("/api/token-test", async (req, res) => {
       if (err) {
         console.log("Error finding user");
         console.error(err);
-        res.status(500).send("Server error");
+        res.status(500).json({
+          success: false,
+          message: "Server error",
+        });
       }
       console.log(user);
-      res.status(200).send(user);
+      res.status(200).json({
+        success: true,
+        message: "Token verified",
+      });
     });
   } catch (err) {
     console.log("Error decoding token");
