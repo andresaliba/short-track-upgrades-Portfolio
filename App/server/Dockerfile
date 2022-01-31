@@ -13,7 +13,6 @@ RUN npm install
 # Copy app source code
 COPY . .
 
-# Exports
-EXPOSE 8080
+EXPOSE 8000
 
 CMD ["npm","start"]
