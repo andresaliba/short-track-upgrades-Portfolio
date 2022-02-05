@@ -1,17 +1,15 @@
-const verifyToken = require("./tokens");
 const User = require("../models/user");
 const Racer = require("../models/racer");
 
 const addRacer = async (req, res) => {
   try {
-    const token = verifyToken(req);
+    const token = req.token;
 
     if (!token) {
-      res.status(401).json({
+      return res.status(401).json({
         success: false,
         message: "No token provided",
       });
-      return;
     }
     const {
       type,
@@ -44,7 +42,7 @@ const addRacer = async (req, res) => {
       !attendedCount ||
       !totalPoints
     ) {
-      res.status(400).json({
+      return res.status(400).json({
         sucess: false,
         message: "Please fill out all fields",
       });
@@ -52,11 +50,10 @@ const addRacer = async (req, res) => {
 
     const user = await User.findOne({ _id: token.user_id });
     if (!user) {
-      res.status(401).json({
+      return res.status(401).json({
         success: false,
         message: "User not found",
       });
-      return;
     }
 
     const racer = new Racer({
@@ -76,9 +73,19 @@ const addRacer = async (req, res) => {
     });
 
     await racer.save();
-    user.racer.push(user);
-    user.save();
+    await user.racers.push(racer);
+    await user.save();
+    res.status(201).json({
+      success: true,
+      message: "Racer added",
+      data: {
+        racer,
+        user,
+      },
+    });
   } catch (err) {
+    console.log("Error adding racer");
+    console.error(err);
     res.status(500).json({
       success: false,
       message: "Server error",
@@ -87,4 +94,8 @@ const addRacer = async (req, res) => {
   }
 };
 
-module.exports = { addRacer };
+const deleteRacer = async (req, res) => {};
+
+const updateRacer = async (req, res) => {};
+
+module.exports = { addRacer, deleteRacer, updateRacer };

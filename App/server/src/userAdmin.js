@@ -10,6 +10,7 @@ const registerUser = async (req, res) => {
         success: false,
         message: "Please fill out all fields",
       });
+      return;
     }
     // Check if the username is already taken
     const user = await User.findOne({ username });
@@ -68,16 +69,23 @@ const loginUser = async (req, res) => {
   try {
     const { username, password } = req.body;
     if (!(username && password)) {
-      res.status(400).json({
+      return res.status(400).json({
         success: false,
         message: "Missing required fields",
       });
-      return;
     }
 
     const user = await User.findOne({ username });
-    if (!(user && (await bc.compare(password, user.password)))) {
-      res.status(401).json({
+
+    if (!user) {
+      return res.status(401).json({
+        success: false,
+        message: "Invalid credentials",
+      });
+    }
+
+    if (!(await bc.compare(password, user.password))) {
+      return res.status(401).json({
         success: false,
         message: "Invalid credentials",
       });
@@ -95,20 +103,20 @@ const loginUser = async (req, res) => {
     );
 
     user.token = token;
+
     await user.save();
 
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
       message: "Login successful",
       data: {
         token,
       },
     });
-    return;
   } catch (err) {
     console.log("Error Loggin In");
     console.error(err);
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       message: "Server error",
     });
