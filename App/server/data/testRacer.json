@@ -1,0 +1,16 @@
+{
+  "type": "Parent",
+  "plateNum": "981",
+  "firstName": "William",
+  "lastName": "Redmond",
+  "gender": "Male",
+  "category": "Grade 2-3",
+  "address": "195 Burnyeat St.",
+  "city": "Truro",
+  "postalCode": "B2N 4R1",
+  "phoneNum": "9029869389",
+  "attended": "no",
+  "paid": "yes",
+  "attendedCount": "3",
+  "totalPoints": "11"
+}

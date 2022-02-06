@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,
   token: String,
-  racer: [
+  racers: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Racer",
