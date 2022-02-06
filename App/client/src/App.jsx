@@ -12,19 +12,18 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route
-            path="dashboard"
-            authToken={authToken}
-            element={<Dashboard />}
-          />
-          <Route
-            path="login"
-            element={
-              <Login authToken={authToken} setAuthToken={setAuthToken} />
-            }
-          />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/dashboard"
+          authToken={authToken}
+          element={<Dashboard />}
+        />
+        <Route
+          path="/login"
+          element={
+            <Login authToken={authToken} setAuthToken={setAuthToken} />
+          }
+        />
       </Routes>
     </div>
   );
