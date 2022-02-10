@@ -31,6 +31,24 @@ app.post("/api/login", async (req, res) => {
   mongoose.connection.close();
 });
 
+app.post("/api/racer", async (req, res) => {
+  await connect();
+  await addRacer(req, res);
+  mongoose.connection.close();
+});
+
+app.delete("/api/racer", async (req, res) => {
+  await connect();
+  await deleteRacer(req, res);
+  mongoose.connection.close();
+});
+
+app.put("/api/racer", async (req, res) => {
+  await connect();
+  await updateRacer(req, res);
+  mongoose.connection.close();
+});
+
 app.get("/api/test", async (req, res) => {
   testResponse(req, res);
 });
@@ -83,24 +101,6 @@ app.get("/api/token-test", async (req, res) => {
       message: "Server error",
     });
   }
-});
-
-app.post("/api/racer", async (req, res) => {
-  await connect();
-  await addRacer(req, res);
-  mongoose.connection.close();
-});
-
-app.delete("/api/racer", async (req, res) => {
-  await connect();
-  await deleteRacer(req, res);
-  mongoose.connection.close();
-});
-
-app.put("/api/racer", async (req, res) => {
-  await connect();
-  await updateRacer(req, res);
-  mongoose.connection.close();
 });
 
 app.listen(8000, async () => {

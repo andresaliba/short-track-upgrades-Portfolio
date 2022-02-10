@@ -1,17 +1,28 @@
 const bc = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
+const validator = require("validator");
+const { validateRegister, validateLogin } = require("./validate");
 
 const registerUser = async (req, res) => {
   try {
-    const { username, password, email, firstName, lastName } = req.body;
-    if (!(username && password && email && firstName && lastName)) {
-      res.status(400).json({
-        success: false,
-        message: "Please fill out all fields",
-      });
-      return;
+    let { username, password, email, firstName, lastName } = req.body;
+    const validation = validateRegister(
+      username,
+      password,
+      email,
+      firstName,
+      lastName
+    );
+    if (!validation.success) {
+      return res.status(400).json(validation);
     }
+    username = validator.rtrim(validator.escape(username), " ");
+    password = validator.rtrim(validator.escape(password), " ");
+    email = validator.normalizeEmail(email);
+    firstName = validator.rtrim(validator.escape(firstName), " ");
+    lastName = validator.rtrim(validator.escape(lastName), " ");
+
     // Check if the username is already taken
     const user = await User.findOne({ username });
     if (user) {
@@ -67,13 +78,14 @@ const registerUser = async (req, res) => {
 
 const loginUser = async (req, res) => {
   try {
-    const { username, password } = req.body;
-    if (!(username && password)) {
-      return res.status(400).json({
-        success: false,
-        message: "Missing required fields",
-      });
+    let { username, password } = req.body;
+    const validation = validateLogin(username, password);
+    if (!validation.success) {
+      return res.status(400).json(validation);
     }
+
+    username = validator.rtrim(validator.escape(username), " ");
+    password = validator.rtrim(validator.escape(password), " ");
 
     const user = await User.findOne({ username });
 

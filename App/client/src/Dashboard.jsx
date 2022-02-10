@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Dashboard = () => {
+const Dashboard = (props) => {
+  const { authToken } = props;
+
+  useEffect(() => {}, []);
+
   return (
     <div>
       <h1>Dashboard</h1>

@@ -11,18 +11,16 @@ const App = () => {
 
   return (
     <div>
+      a
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
           path="/dashboard"
-          authToken={authToken}
-          element={<Dashboard />}
+          element={<Dashboard authToken={authToken} />}
         />
         <Route
           path="/login"
-          element={
-            <Login authToken={authToken} setAuthToken={setAuthToken} />
-          }
+          element={<Login authToken={authToken} setAuthToken={setAuthToken} />}
         />
       </Routes>
     </div>
