@@ -10,8 +10,7 @@ const App = () => {
   const [authToken, setAuthToken] = useState(null);
 
   return (
-    <div>
-      a
+    <div className="overlay">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
