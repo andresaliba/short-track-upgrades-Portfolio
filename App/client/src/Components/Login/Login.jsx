@@ -1,9 +1,6 @@
-import { useState } from "react";
 import React from "react";
-import Nav from "./Nav/Nav";
-import TruroFlag from "./images/TownOfTruro.jpeg";
-import ColchesterFlag from "./images/ColchesterCounty.gif";
-import Railyard from "./images/Railyard_Logo.png";
+import Nav from "../Nav/Nav";
+import { useState } from "react";
 
 const Login = (props) => {
   const { authToken, setAuthToken } = props;
@@ -35,7 +32,7 @@ const Login = (props) => {
   };
 
   return (
-    <div>
+    <div className="Login">
       <Nav />
       <div className="pt-5">
         <div className="container">
@@ -78,13 +75,19 @@ const Login = (props) => {
                       setPassConfirm(e.target.value);
                     }}
                   /> */}
-                  <a href="#">Forgot your password?</a>
+                  <button>Forgot your password?</button>
+                  {/* <a href="#">Forgot your password?</a> */}
                 </div>
                 <div className="mx-auto text-center">
-                  <input type="submit" className="btn btn-primary mt-3" value="Login" />
+                  <input
+                    type="submit"
+                    className="btn btn-primary mt-3"
+                    value="Login"
+                  />
                 </div>
                 <div className="mx-auto text-center mt-3">
-                  <a href="#">Need help?</a>
+                  <button>Need help?</button>
+                  {/* <a href="#">Need help?</a> */}
                 </div>
               </form>
               <div>{authToken ? authToken : null}</div>
