@@ -1,10 +1,9 @@
 import { useState } from "react";
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import Home from "./Home";
-import Dashboard from "./Dashboard";
-import Login from "./Login";
+import Home from "./Components/Home/Home";
+import Login from "./Components/Login/Login";
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 const App = () => {
   const [authToken, setAuthToken] = useState(null);
@@ -12,11 +11,16 @@ const App = () => {
   return (
     <div className="overlay">
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* HOME PAGE  */} 
+        <Route path="/" element={<Home authToken={authToken} />} />
+
+        {/* DASHBOARD PAGE */}
         <Route
           path="/dashboard"
           element={<Dashboard authToken={authToken} />}
         />
+
+        {/* LOGIN PAGE */}
         <Route
           path="/login"
           element={<Login authToken={authToken} setAuthToken={setAuthToken} />}

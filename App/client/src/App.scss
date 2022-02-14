@@ -1,10 +1,4 @@
-body {
-  background-image: url("./images/update.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
+@import "./_globals";
 
 .overlay {
   position: fixed; /* Sit on top of the page content */

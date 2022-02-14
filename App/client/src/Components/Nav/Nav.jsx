@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/CSTLogo.png";
+import logo from "../../images/CSTLogo.png";
 
 const Nav = () => {
   return (
-    <div>
+    <div className="Navegation">
       <div className="container-fluid">
         <div className="row">
           <div className="col">
