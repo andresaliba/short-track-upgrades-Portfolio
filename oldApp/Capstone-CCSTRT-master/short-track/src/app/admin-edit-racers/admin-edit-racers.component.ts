@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { FormGroup, FormControl, FormBuilder, Validators, FormArray } from '@angular/forms';
-import { Racer } from './../racers.model';
+import { Racer } from '../racers.model';
 
 @Component({
   selector: 'app-admin-edit-racers',

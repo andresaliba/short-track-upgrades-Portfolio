@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { FormGroup, FormControl, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { Racer } from './../racers.model';
+import { Racer } from '../racers.model';
 import { Router } from '@angular/router';
 
 @Component({

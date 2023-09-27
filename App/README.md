@@ -1,6 +1,6 @@
-# Boilerplate for PROG3017 Full Stack Programming with Express Server and MongoDB
+# Full Stack Programming with Express Server and Mongoose
 
-This project folder contains the React client side and the Express Server side with MondoDB
+This project folder contains the React client side and the Express Server side with Mongoose
 
 ## Available Scripts
 
@@ -17,6 +17,7 @@ Spins up the container that runs the Express server (running on Node.js)
 Spins up the container that runs the MongoDB server
 
 ### `docker compose -f docker-compose-prod.yml build`
+
 Builds docker container images for production build
 
 ### `docker compose -f docker-compose-prod.yml up`
